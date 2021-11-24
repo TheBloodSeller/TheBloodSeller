@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 156517583}
   - component: {fileID: 156517582}
   m_Layer: 0
-  m_Name: CERES-1200
+  m_Name: SpaceImg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
