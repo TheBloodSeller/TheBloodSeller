@@ -4,15 +4,45 @@ using UnityEngine;
 
 public class SystemManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    static SystemManager instance = null;
+
+    public static SystemManager Instance
     {
-        
+        get
+        {
+            return instance;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    
+    void Awake()
     {
-        
+        if (instance != null)
+        {
+            Debug.LogError("SystemManager Error! Singleton error");
+            Destroy(gameObject);
+            return;
+        }
+        instance = this;
+    }
+
+    [SerializeField]
+    Player player;
+    public Player Hero
+    {
+        get
+        {
+            return player;
+        }
+    }
+
+    [SerializeField]
+    DialogueManager dialogueManager;
+    public DialogueManager DialogueManager
+    {
+        get
+        {
+            return dialogueManager;
+        }
     }
 }

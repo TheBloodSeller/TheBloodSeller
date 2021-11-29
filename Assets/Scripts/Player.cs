@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField]
+    int hp = 8;         //±âº» Ã¼·Â
+    [SerializeField]
+    int blood = 0;      //ÇÇ¸¦ –A È½¼ö
+    [SerializeField]
+    int dream = 0;      //²ÞÀ» ²Û È½¼ö
     void Start()
     {
         
