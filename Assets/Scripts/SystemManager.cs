@@ -45,4 +45,14 @@ public class SystemManager : MonoBehaviour
             return dialogueManager;
         }
     }
+
+    [SerializeField]
+    DialogueTrigger dialogueTrigger;
+    public DialogueTrigger DialogueTrigger
+    {
+        get
+        {
+            return dialogueTrigger;
+        }
+    }
 }
