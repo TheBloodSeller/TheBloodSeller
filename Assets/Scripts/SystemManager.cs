@@ -55,4 +55,14 @@ public class SystemManager : MonoBehaviour
             return dialogueTrigger;
         }
     }
+
+    [SerializeField]
+    DialogueImg dialogueImg;
+    public DialogueImg DialogueImg
+    {
+        get
+        {
+            return dialogueImg;
+        }
+    }
 }

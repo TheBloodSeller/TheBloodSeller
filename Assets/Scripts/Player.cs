@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        //매 프래임 마다 플레이어의 상태를 넘겨준다
+        SystemManager.Instance.DialogueTrigger.PlayerImpormation(hp, blood, dream);
     }
 }
