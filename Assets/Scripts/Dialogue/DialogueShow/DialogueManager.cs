@@ -50,5 +50,6 @@ public class DialogueManager : MonoBehaviour
     {
         anim.SetBool("isOpen", false);
         Debug.Log("End of conversion");
+        SystemManager.Instance.ChangeMat.ShowBtnCollection();
     }
 }

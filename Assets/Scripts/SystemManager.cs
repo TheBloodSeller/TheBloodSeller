@@ -55,4 +55,17 @@ public class SystemManager : MonoBehaviour
             return dialogueTrigger;
         }
     }
+
+    [SerializeField]
+    ChangeMat changeMat;
+    public ChangeMat ChangeMat
+    {
+        get
+        {
+            return changeMat;
+        }
+    
+    }
+
+
 }
