@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ChangeMat : MonoBehaviour
 {
+    //0:Space
+    //1.House
     [SerializeField]
     Material[] backMat;
     [SerializeField]
