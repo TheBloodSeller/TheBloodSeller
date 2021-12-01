@@ -13,9 +13,6 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField]
     int dream;
 
-
-
-
     void Start()
     {
         dialogue.name = "감자몽";
@@ -39,8 +36,13 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
+        CheakDialogue();
         SystemManager.Instance.DialogueManager.StartDialogue(dialogue);
     }
 
-   
+    //대화 흐름 판단하기
+    void CheakDialogue()
+    {
+
+    }   
 }
