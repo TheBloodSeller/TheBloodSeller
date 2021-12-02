@@ -2329,6 +2329,8 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 8e0d4d9464bc6f24281b270e78e90885, type: 2}
   - {fileID: 2100000, guid: 711c46a21718f714c8b2f28348cc850a, type: 2}
   - {fileID: 2100000, guid: b89e99ea1c9c344459904dc46a4aa66c, type: 2}
+  - {fileID: 2100000, guid: 82b26b1a6cd8b4a4e8b649d90262fe74, type: 2}
+  - {fileID: 2100000, guid: 05dbcb4c6e0ff9d4eafc1caa00404892, type: 2}
   background: {fileID: 1030430723}
   buttonCollection: {fileID: 775445762}
 --- !u!4 &1590943986

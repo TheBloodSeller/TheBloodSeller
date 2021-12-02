@@ -13,6 +13,8 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField]
     int dream;
 
+    Dictionary<string, string[]> testTxt;
+
     void Start()
     {
         dialogue.name = "°¨ÀÚ¸ù";

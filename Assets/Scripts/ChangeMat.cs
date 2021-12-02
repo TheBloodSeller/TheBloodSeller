@@ -48,16 +48,18 @@ public class ChangeMat : MonoBehaviour
                 stageIndex = 4;
                 break;
 
-            case "BloodShop":
+            case "Market":
+                stageIndex = 5;
                 break;
 
-            case "Market":
+            case "BloodShop":
+                stageIndex = 6;
                 break;
+
             default:
                 break;
         }
         background.material = backMat[stageIndex];
-
         buttonCollection.SetActive(false);
     }
 }
