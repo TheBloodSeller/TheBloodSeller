@@ -26,6 +26,7 @@ public class DialogueManager : MonoBehaviour
 
         foreach (string sentance in dialogue.sentences)
         {
+            Debug.Log("³Ä¿Ë");
             sentences.Enqueue(sentance);
         }
 

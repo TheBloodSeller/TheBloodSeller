@@ -61,5 +61,6 @@ public class ChangeMat : MonoBehaviour
         }
         background.material = backMat[stageIndex];
         buttonCollection.SetActive(false);
+        SystemManager.Instance.DialogueTrigger.TriggerDialogue();
     }
 }

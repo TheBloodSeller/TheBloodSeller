@@ -22,7 +22,6 @@ public class DialogueTrigger : MonoBehaviour
     {
        
         testTxt.Add(1, new Dialogue ("새미누리",new string[] { "으으아아가","아어린ㅇㅎ"}));
-
         testTxt.Add(2, new Dialogue("해미누리", new string[] { "낑유유유육"}));
     }
 
@@ -52,6 +51,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
+        Debug.Log("TriggerDialogue");
         CheakDialogue(dream);
         
         if (dialogue == null)
@@ -64,12 +64,14 @@ public class DialogueTrigger : MonoBehaviour
     //대화 흐름 판단하기
     void CheakDialogue(int dream)
     {
-        switch (dream)
+        int d = 1;
+        Debug.Log("CheakDialogue");
+        switch (d)
         {
             case 1:
-
+                Debug.Log("받아오기");
                 dialogue = testTxt[1];
-                Debug.Log(dialogue.name);
+                Debug.Log(dialogue.sentences[0]);
                 break;
             case 2:
                
@@ -79,5 +81,6 @@ public class DialogueTrigger : MonoBehaviour
             default:
                 break;
         }
+        d++;
     }   
 }
