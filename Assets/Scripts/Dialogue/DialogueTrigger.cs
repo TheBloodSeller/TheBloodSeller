@@ -51,7 +51,6 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        Debug.Log("TriggerDialogue");
         CheakDialogue(dream);
         
         if (dialogue == null)
@@ -64,14 +63,10 @@ public class DialogueTrigger : MonoBehaviour
     //대화 흐름 판단하기
     void CheakDialogue(int dream)
     {
-        int d = 1;
-        Debug.Log("CheakDialogue");
-        switch (d)
+        switch (dream)
         {
             case 1:
-                Debug.Log("받아오기");
                 dialogue = testTxt[1];
-                Debug.Log(dialogue.sentences[0]);
                 break;
             case 2:
                
@@ -81,6 +76,6 @@ public class DialogueTrigger : MonoBehaviour
             default:
                 break;
         }
-        d++;
+        SystemManager.Instance.Hero.dream++;
     }   
 }

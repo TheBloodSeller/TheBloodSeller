@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField]
-    int hp = 8;         //±âº» Ã¼·Â
-    [SerializeField]
-    int blood = 0;      //ÇÇ¸¦ –A È½¼ö
-    [SerializeField]
-    int dream = 0;      //²ÞÀ» ²Û È½¼ö
+
+    public int hp = 8;         //±âº» Ã¼·Â
+    public int blood = 0;      //ÇÇ¸¦ –A È½¼ö
+    public int dream = 0;      //²ÞÀ» ²Û È½¼ö
     void Start()
     {
-        
+        SystemManager.Instance.DialogueTrigger.PlayerImpormation(hp, blood, dream);
     }
 
     // Update is called once per frame
