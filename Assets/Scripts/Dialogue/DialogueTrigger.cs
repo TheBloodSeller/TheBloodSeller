@@ -13,12 +13,26 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField]
     int dream;
 
-    Dictionary<string, string[]> testTxt;
+    Dictionary<int, Dialogue> testTxt;
 
+
+    
+
+    void Generate()
+    {
+       
+        testTxt.Add(1, new Dialogue ("새미누리",new string[] { "으으아아가","아어린ㅇㅎ"}));
+
+        testTxt.Add(2, new Dialogue("해미누리", new string[] { "낑유유유육"}));
+    }
+
+    void Awake()
+    {
+        testTxt = new Dictionary<int, Dialogue>();
+    }
     void Start()
     {
-        dialogue.name = "감자몽";
-        dialogue.sentences = new string[] {"처음","어머머머머멈머머마마","그럼 와우 이미제어이ㅏㄹ"};
+        Generate();
         TriggerDialogue();
 
     }
@@ -38,13 +52,32 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        CheakDialogue();
+        CheakDialogue(dream);
+        
+        if (dialogue == null)
+        {
+            Debug.LogError("다이알로그가 없음");
+        }
         SystemManager.Instance.DialogueManager.StartDialogue(dialogue);
     }
 
     //대화 흐름 판단하기
-    void CheakDialogue()
+    void CheakDialogue(int dream)
     {
+        switch (dream)
+        {
+            case 1:
 
+                dialogue = testTxt[1];
+                Debug.Log(dialogue.name);
+                break;
+            case 2:
+               
+                dialogue = testTxt[2];
+                break;
+
+            default:
+                break;
+        }
     }   
 }
