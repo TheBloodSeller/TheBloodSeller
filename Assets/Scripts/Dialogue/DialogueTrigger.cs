@@ -109,23 +109,23 @@ public class DialogueTrigger : MonoBehaviour
                 break;
 
             case "Spaceport":
-                dialogue = buttonText["집"];
+                dialogue = buttonText["항구"];
                 break;
 
             case "Community":
-                dialogue = buttonText["집"];
+                dialogue = buttonText["주민센터"];
                 break;
 
             case "Park":
-                dialogue = buttonText["집"];
+                dialogue = buttonText["공원"];
                 break;
 
             case "Market":
-                dialogue = buttonText["집"];
+                dialogue = buttonText["상점"];
                 break;
 
             case "BloodShop":
-                dialogue = buttonText["집"];
+                dialogue = buttonText["혈액거래소"];
                 break;
 
             default:
