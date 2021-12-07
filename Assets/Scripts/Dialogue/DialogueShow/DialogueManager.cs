@@ -10,6 +10,10 @@ public class DialogueManager : MonoBehaviour
     Text nameText;
     [SerializeField]
     Text dialogueText;
+    [SerializeField]
+    GameObject[] images;
+
+    GameObject go;
 
     public Animator anim;
     void Start()
@@ -19,8 +23,20 @@ public class DialogueManager : MonoBehaviour
     }
     public void StartDialogue(Dialogue dialogue)
     {
+
+        //화자의 이미지 불러오기
+        go = CheckImage(dialogue.name);
+        if (!go)
+        {
+
+        }
+        else
+            go.SetActive(true);
         anim.SetBool("isOpen",true);
         nameText.text = dialogue.name;
+
+       
+            
 
         sentences.Clear();
 
@@ -49,7 +65,21 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         anim.SetBool("isOpen", false);
+        go.SetActive(false);
         Debug.Log("End of conversion");
         SystemManager.Instance.ChangeMat.ShowBtnCollection();
+    }
+
+    GameObject CheckImage(string name)
+    {
+        switch (name)
+        {
+            case "새미누리":
+                return images[0];
+            case "해미누리":
+                return images[1];
+            default:
+                return null;
+        }
     }
 }
