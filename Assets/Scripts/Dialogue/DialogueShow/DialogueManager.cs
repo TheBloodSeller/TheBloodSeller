@@ -19,6 +19,10 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         sentences = new Queue<string>();
+        for (int i = 0; i < images.Length; i++)
+        {
+            images[i].SetActive(false);
+        }
 
     }
     public void StartDialogue(Dialogue dialogue)
@@ -27,9 +31,7 @@ public class DialogueManager : MonoBehaviour
         //화자의 이미지 불러오기
         go = CheckImage(dialogue.name);
         if (!go)
-        {
-
-        }
+            ;
         else
             go.SetActive(true);
         anim.SetBool("isOpen",true);
@@ -65,7 +67,11 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         anim.SetBool("isOpen", false);
-        go.SetActive(false);
+        if (go)
+        {
+            go.SetActive(false);
+        }
+        
         Debug.Log("End of conversion");
         SystemManager.Instance.ChangeMat.ShowBtnCollection();
     }
