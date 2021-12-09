@@ -5,8 +5,12 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 public class ChangeMat : MonoBehaviour
 {
-    //0:Space
-    //1.House
+    //0:House
+    //1.BloodShop
+    //2.Spaceport
+    //3.Park
+    //4.Market
+    //5.Space
     [SerializeField]
     Material[] backMat;
     [SerializeField]
@@ -40,20 +44,16 @@ public class ChangeMat : MonoBehaviour
                 stageIndex = 2;
                 break;
 
-            case "Community":
+            case "Park":
                 stageIndex = 3;
                 break;
 
-            case "Park":
+            case "Market":
                 stageIndex = 4;
                 break;
 
-            case "Market":
-                stageIndex = 5;
-                break;
-
             case "BloodShop":
-                stageIndex = 6;
+                stageIndex = 1;
                 break;
 
             default:

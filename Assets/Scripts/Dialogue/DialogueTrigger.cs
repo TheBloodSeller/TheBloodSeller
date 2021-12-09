@@ -35,13 +35,13 @@ public class DialogueTrigger : MonoBehaviour
                                                               "그녀는 혈액 관리소에 가서 매혈을 할 것 이다."
                                                                }));
                                                                 
-        buttonText.Add("공원", new Dialogue(" ", new string[] { }));
-        buttonText.Add("주민센터", new Dialogue(" ", new string[] {"광장에 많은 사람들이 있다", 
+        buttonText.Add("공원", new Dialogue(" ", new string[] { "광장에 많은 사람들이 있다",
                                                                    "가운데 분수를 중심에 노점상이 있다.",
                                                                    "복권을 파는 것 같은데... 한번 사 볼까?"}));
-        buttonText.Add("혈액채취가능", new Dialogue(" ", new string[] { }));
-        buttonText.Add("혈액채취불가능", new Dialogue(" ", new string[] { }));
-        buttonText.Add("항구", new Dialogue(" ", new string[] { ""}));
+        buttonText.Add("혈액 관리소", new Dialogue(" ", new string[] {"새미누리는 간호기계에 안내에 따라 채혈실에 도착했다" ,
+                                                                     "홀로그램으로 확인서가 띄워지자, 새미누리는 팔을 들어 올렸다.",
+                                                                     "혈액 채취기가 새미누리의 왼 팔을 잡고 움직였다."}));
+        buttonText.Add("항구", new Dialogue(" ", new string[] {""}));
         buttonText.Add("집", new Dialogue(" ", new string[] { }));
         buttonText.Add("상점", new Dialogue(" ", new string[] { }));
 
@@ -121,10 +121,6 @@ public class DialogueTrigger : MonoBehaviour
 
             case "Spaceport":
                 dialogue = buttonText["항구"];
-                break;
-
-            case "Community":
-                dialogue = buttonText["주민센터"];
                 break;
 
             case "Park":
