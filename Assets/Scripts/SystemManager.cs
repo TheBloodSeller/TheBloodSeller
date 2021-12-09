@@ -67,6 +67,14 @@ public class SystemManager : MonoBehaviour
     
     }
 
- 
+    [SerializeField]
+    DialogueStory dialogueStory;
+    public DialogueStory DialogueStory
+    {
+        get
+        {
+            return dialogueStory;
+        }
+    }
 
 }
