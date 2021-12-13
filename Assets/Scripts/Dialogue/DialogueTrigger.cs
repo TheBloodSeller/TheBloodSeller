@@ -84,7 +84,7 @@ public class DialogueTrigger : MonoBehaviour
         switch (bgMatName)
         {
             case "Start":
-                
+                SystemManager.Instance.DialogueStory.Move_Start();
                 break;
 
             case "House":

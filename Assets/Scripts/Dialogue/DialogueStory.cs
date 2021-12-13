@@ -31,11 +31,20 @@ public class DialogueStory : MonoBehaviour
 
 
     }
+    void Start()
+    {
+        Generate();
+    }
 
     void Awake()
     {
         dreamText = new Dictionary<int, Dialogue>();
         buttonText = new Dictionary<string, Dialogue>();
+    }
+
+    public void Move_Start()
+    {
+        SystemManager.Instance.DialogueTrigger.dialogue = buttonText["Ω√¿€"];
     }
 
     public void Move_Park()

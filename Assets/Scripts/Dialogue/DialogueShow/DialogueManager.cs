@@ -28,14 +28,15 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue dialogue)
     {
 
+
         //화자의 이미지 불러오기
-        go = CheckImage(dialogue.name);
+        /*go = CheckImage(dialogue.name);
         if (!go)
             ;
         else
             go.SetActive(true);
         anim.SetBool("isOpen",true);
-        nameText.text = dialogue.name;
+        nameText.text = dialogue.name;*/
 
 
         sentences.Clear();
