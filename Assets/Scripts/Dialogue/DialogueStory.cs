@@ -75,7 +75,7 @@ public class DialogueStory : MonoBehaviour
     public void Move_House(int hp)
     {
         SystemManager.Instance.DialogueTrigger.dialogue = buttonText["Áý"];
-        SystemManager.Instance.Hero.SetHp(hp);
+        SystemManager.Instance.Hero.SetHp(hp > 3000? + 10: + 100);
     }
 
     public void Move_Market(int money)
