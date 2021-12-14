@@ -17,7 +17,7 @@ public class DialogueTrigger : MonoBehaviour
     [SerializeField]
     int hungry;
     [SerializeField]
-    int money;;
+    int money;
 
 
 
@@ -93,7 +93,7 @@ public class DialogueTrigger : MonoBehaviour
                 break;
 
             case "House":
-                SystemManager.Instance.DialogueStory.Move_House();
+                SystemManager.Instance.DialogueStory.Move_House(hp);
                 break;
 
             case "Spaceport":
@@ -106,7 +106,7 @@ public class DialogueTrigger : MonoBehaviour
                 break;
 
             case "Market":
-                SystemManager.Instance.DialogueStory.Move_Market();
+                SystemManager.Instance.DialogueStory.Move_Market(money);
                 break;
 
             case "BloodShop":

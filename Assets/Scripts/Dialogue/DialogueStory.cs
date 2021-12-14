@@ -72,12 +72,13 @@ public class DialogueStory : MonoBehaviour
         SystemManager.Instance.DialogueTrigger.dialogue = buttonText["항구"];
     }
 
-    public void Move_House()
+    public void Move_House(int hp)
     {
         SystemManager.Instance.DialogueTrigger.dialogue = buttonText["집"];
+        SystemManager.Instance.Hero.SetHp(hp);
     }
 
-    public void Move_Market()
+    public void Move_Market(int money)
     {
         SystemManager.Instance.DialogueTrigger.dialogue = buttonText["상점"];
     }
