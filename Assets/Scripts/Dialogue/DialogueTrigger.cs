@@ -88,11 +88,11 @@ public class DialogueTrigger : MonoBehaviour
                 break;
 
             case "House":
-                
+                SystemManager.Instance.DialogueStory.Move_House();
                 break;
 
             case "Spaceport":
-                
+                SystemManager.Instance.DialogueStory.Move_Spaceport();
                 break;
 
             case "Park":
@@ -101,11 +101,11 @@ public class DialogueTrigger : MonoBehaviour
                 break;
 
             case "Market":
-               
+                SystemManager.Instance.DialogueStory.Move_Market();
                 break;
 
             case "BloodShop":
-                
+                SystemManager.Instance.DialogueStory.Move_Bloodshop();
                 break;
 
             default:
