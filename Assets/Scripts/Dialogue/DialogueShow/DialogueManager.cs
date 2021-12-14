@@ -16,9 +16,14 @@ public class DialogueManager : MonoBehaviour
     GameObject go;
 
     public Animator anim;
-    void Start()
+
+    void Awake()
     {
         sentences = new Queue<string>();
+    }
+    void Start()
+    {
+        
         for (int i = 0; i < images.Length; i++)
         {
             images[i].SetActive(false);
@@ -36,9 +41,9 @@ public class DialogueManager : MonoBehaviour
         else
             go.SetActive(true);
         anim.SetBool("isOpen", true);
+
+
         nameText.text = dialogue.name;
-
-
         sentences.Clear();
 
         foreach (string sentance in dialogue.sentences)

@@ -39,15 +39,18 @@ public class DialogueStory : MonoBehaviour
 
 
     }
-    void Start()
-    {
-        Generate();
-    }
 
     void Awake()
     {
         dreamText = new Dictionary<int, Dialogue>();
         buttonText = new Dictionary<string, Dialogue>();
+        Generate();
+
+    }
+
+    void Start()
+    {
+        
     }
 
     public void Move_Start()
