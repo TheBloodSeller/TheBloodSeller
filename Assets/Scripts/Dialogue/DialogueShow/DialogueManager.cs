@@ -12,6 +12,8 @@ public class DialogueManager : MonoBehaviour
     Text dialogueText;
     [SerializeField]
     GameObject[] images;
+    [SerializeField]
+    GameObject DialogueBar;
 
     GameObject go;
 
@@ -23,7 +25,9 @@ public class DialogueManager : MonoBehaviour
     }
     void Start()
     {
-        
+        DialogueBar.SetActive(true);
+
+
         for (int i = 0; i < images.Length; i++)
         {
             images[i].SetActive(false);
