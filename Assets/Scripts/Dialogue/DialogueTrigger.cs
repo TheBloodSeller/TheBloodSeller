@@ -14,8 +14,12 @@ public class DialogueTrigger : MonoBehaviour
     int blood;
     [SerializeField]
     int dream;
+    [SerializeField]
+    int hungry;
+    [SerializeField]
+    int money;;
 
-    
+
 
     void Start()
     {
@@ -34,11 +38,12 @@ public class DialogueTrigger : MonoBehaviour
     }
 
     //매 프레임 마다 플레이어의 상태를 받는다
-    public void PlayerImpormation(int hp, int blood, int dream)
+    public void PlayerImpormation(int hp, int blood, int hungry,int money)
     {
         this.hp = hp;
         this.blood = blood;
-        this.dream = dream;
+        this.hungry = hungry;
+        this.money = money;
     }
 
     public void TriggerDialogue(int dream)
@@ -76,7 +81,7 @@ public class DialogueTrigger : MonoBehaviour
             default:
                 break;
         }
-        SystemManager.Instance.Hero.dream++;
+        dream++;
     }   
 
     void CheakDialogue(string bgMatName)

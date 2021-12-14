@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class DialogueStory : MonoBehaviour
 {
-    Dialogue dialogue => SystemManager.Instance.DialogueTrigger.dialogue;
 
     Dictionary<int, Dialogue> dreamText;
     Dictionary<string, Dialogue> buttonText;
@@ -33,6 +32,10 @@ public class DialogueStory : MonoBehaviour
         buttonText.Add("집", new Dialogue(" ", new string[] {"새미누리는 지친몸을 이끌고 정리를 한 뒤 침대에 누웠다.",
                                                              "창문 밖의 별자리를 보면서 스르르 잠이 든다."}));
         buttonText.Add("상점", new Dialogue(" ", new string[] {"새미누리는 생필품을 사러 상점으로 갔다."}));
+
+
+        //꿈이야기
+        
 
 
     }
