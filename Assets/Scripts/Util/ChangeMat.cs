@@ -20,6 +20,7 @@ public class ChangeMat : MonoBehaviour
 
     void Start()
     {
+        background.material = backMat[5];
         buttonCollection.SetActive(false);
     }
 

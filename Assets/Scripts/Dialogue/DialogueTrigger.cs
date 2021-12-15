@@ -93,7 +93,7 @@ public class DialogueTrigger : MonoBehaviour
                 break;
 
             case "House":
-                SystemManager.Instance.DialogueStory.Move_House(hp);
+                SystemManager.Instance.DialogueStory.Move_House(hp,hungry,blood);
                 break;
 
             case "Spaceport":
@@ -110,7 +110,7 @@ public class DialogueTrigger : MonoBehaviour
                 break;
 
             case "BloodShop":
-                SystemManager.Instance.DialogueStory.Move_Bloodshop();
+                SystemManager.Instance.DialogueStory.Move_Bloodshop(blood,hp);
                 break;
 
             default:
