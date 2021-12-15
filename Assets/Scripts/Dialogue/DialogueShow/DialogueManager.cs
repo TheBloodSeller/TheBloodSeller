@@ -6,16 +6,13 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     private Queue<string> sentences;
-    [SerializeField]
-    Text nameText;
-    [SerializeField]
-    Text dialogueText;
-    [SerializeField]
-    GameObject[] images;
-    [SerializeField]
-    GameObject DialogueBar;
-    [SerializeField]
-    GameObject MoveBtn;
+    [SerializeField] Text nameText; 
+    [SerializeField] Text dialogueText;
+    [SerializeField] GameObject[] images;
+    [SerializeField] GameObject DialogueBar;
+    [SerializeField] GameObject MoveBtns;
+    [SerializeField] GameObject MainBtn;
+    [SerializeField] GameObject productsBar;
 
     GameObject go;
 
@@ -64,7 +61,8 @@ public class DialogueManager : MonoBehaviour
     {
         if (sentences.Count == 0)
         {
-            EndDialogue();
+            anim.SetBool("isOpen", false);
+            MainBtn.SetActive(true);
             return;
         }
 
@@ -73,16 +71,22 @@ public class DialogueManager : MonoBehaviour
 
     }
 
-    void EndDialogue()
+    public void EndDialogue()
     {
-        anim.SetBool("isOpen", false);
+        
+
         if (go)
         {
             go.SetActive(false);
         }
+
+        if (productsBar.activeSelf)
+            productsBar.SetActive(false);
         
         Debug.Log("End of conversion");
-        MoveBtn.SetActive(true);
+        SystemManager.Instance.ChangeMat.MainScene();
+        MainBtn.SetActive(false);
+        MoveBtns.SetActive(true);
     }
 
     GameObject CheckImage(string name)
