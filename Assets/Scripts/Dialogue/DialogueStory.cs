@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class DialogueStory : MonoBehaviour
 {
+    [SerializeField]
+    GameObject productsBar;
 
     Dictionary<int, Dialogue> dreamText;
     Dictionary<string, Dialogue> buttonText;
@@ -39,7 +42,8 @@ public class DialogueStory : MonoBehaviour
                                                                "새미누리는 난간을 잡으며 매표소 앞에 섰다."}));
                                                                     
         buttonText.Add("집", new Dialogue(" ", new string[] {"새미누리는 지친몸을 이끌고 정리를 한 뒤 침대에 누웠다.",
-                                                             "창문 밖의 별자리를 보면서 스르르 잠이 든다."}));
+                                                             "창문 밖의 별자리를 보면서 스르르 잠이 든다.",
+                                                             "잠을 자고 일어나니 몸이 가뿐하다"}));
 
         buttonText.Add("상점", new Dialogue(" ", new string[] {"새미누리는 생필품을 사러 상점으로 갔다."}));
 
@@ -57,6 +61,10 @@ public class DialogueStory : MonoBehaviour
         Generate();
 
     }
+    void Start()
+    {
+        productsBar.SetActive(false);
+    }
 
 
     public void Move_Start()
@@ -69,6 +77,9 @@ public class DialogueStory : MonoBehaviour
         SystemManager.Instance.DialogueTrigger.dialogue = buttonText["공원"];
         //도박
         int a, b, c;
+        a = Random.Range(1, 10);
+        b = Random.Range(1, 10);
+        c = Random.Range(1, 10);
     }
 
     public void Move_Bloodshop(int blood,int hp)
@@ -93,8 +104,10 @@ public class DialogueStory : MonoBehaviour
         SystemManager.Instance.Hero.SetBlood(hungry >= 5 ? blood + 3: blood + 1);
     }
 
-    public void Move_Market(int money)
+    public void Move_Market(int money,int hungry)
     {
         SystemManager.Instance.DialogueTrigger.dialogue = buttonText["상점"];
+        
+        productsBar.SetActive(true);
     }
 }

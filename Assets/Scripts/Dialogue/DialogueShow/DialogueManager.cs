@@ -14,6 +14,8 @@ public class DialogueManager : MonoBehaviour
     GameObject[] images;
     [SerializeField]
     GameObject DialogueBar;
+    [SerializeField]
+    GameObject MoveBtn;
 
     GameObject go;
 
@@ -26,6 +28,7 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         DialogueBar.SetActive(true);
+        anim.SetBool("isOpen", true);
 
 
         for (int i = 0; i < images.Length; i++)
@@ -36,6 +39,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void StartDialogue(Dialogue dialogue)
     {
+        anim.SetBool("isOpen", true);
 
 
         //화자의 이미지 불러오기
@@ -44,9 +48,7 @@ public class DialogueManager : MonoBehaviour
             ;
         else
             go.SetActive(true);
-        anim.SetBool("isOpen", true);
-
-
+        
         nameText.text = dialogue.name;
         sentences.Clear();
 
@@ -80,7 +82,7 @@ public class DialogueManager : MonoBehaviour
         }
         
         Debug.Log("End of conversion");
-        SystemManager.Instance.ChangeMat.ShowBtnCollection();
+        MoveBtn.SetActive(true);
     }
 
     GameObject CheckImage(string name)

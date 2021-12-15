@@ -21,12 +21,6 @@ public class ChangeMat : MonoBehaviour
     void Start()
     {
         background.material = backMat[5];
-        buttonCollection.SetActive(false);
-    }
-
-    public void ShowBtnCollection()
-    {
-        buttonCollection.SetActive(true);
     }
 
     public void OnClickNextStage()
