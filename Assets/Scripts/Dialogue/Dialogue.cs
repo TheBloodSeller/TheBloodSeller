@@ -19,10 +19,3 @@ public class Dialogue
         this.sentences = sentences;
     }
 }
-[System.Serializable]
-public class DialogueEvent
-{
-    //어디 대사 출력할껀지 
-    public Vector2 line;
-    public Dialogue[] dialogues;
-}

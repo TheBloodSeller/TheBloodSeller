@@ -8,6 +8,8 @@ public class DialogueStory : MonoBehaviour
     [SerializeField]
     GameObject productsBar;
 
+    Dialogue dialogue;
+
     Dictionary<int, Dialogue> dreamText;
     Dictionary<string, Dialogue> buttonText;
 
@@ -69,45 +71,55 @@ public class DialogueStory : MonoBehaviour
 
     public void Move_Start()
     {
-        SystemManager.Instance.DialogueTrigger.dialogue = buttonText["시작"];
+        dialogue = buttonText["시작"];
+        SystemManager.Instance.DialogueManager.StartDialogue(dialogue);
     }
 
     public void Move_Park()
     {
-        SystemManager.Instance.DialogueTrigger.dialogue = buttonText["공원"];
+        dialogue = buttonText["공원"];
         //도박
         int a, b, c;
         a = Random.Range(1, 10);
         b = Random.Range(1, 10);
         c = Random.Range(1, 10);
+        SystemManager.Instance.DialogueManager.StartDialogue(dialogue);
     }
 
     public void Move_Bloodshop(int blood,int hp)
     {
-        SystemManager.Instance.DialogueTrigger.dialogue = buttonText["혈액관리소"];
+        dialogue = buttonText["혈액관리소"];
         if(blood < 3600)
         {
 
         }
-
+        SystemManager.Instance.DialogueManager.StartDialogue(dialogue);
     }
 
     public void Move_Spaceport()
     {
-        SystemManager.Instance.DialogueTrigger.dialogue = buttonText["항구"];
+        dialogue = buttonText["항구"];
+        SystemManager.Instance.DialogueManager.StartDialogue(dialogue);
     }
 
     public void Move_House(int hp, int hungry,int blood)
     {
-        SystemManager.Instance.DialogueTrigger.dialogue = buttonText["집"];
-        SystemManager.Instance.Hero.SetHp(hungry >= 5 ? hp + 3: hp + 1);
-        SystemManager.Instance.Hero.SetBlood(hungry >= 5 ? blood + 3: blood + 1);
+        
+        SystemManager.Instance.Player.HP = hungry >= 5 ? hp + 3 : hp + 1;
+        SystemManager.Instance.Player.Blood = hungry >= 5 ? blood + 3: blood + 1;
+        dialogue = buttonText["집"];
+        SystemManager.Instance.DialogueManager.StartDialogue(dialogue);
+        dialogue = buttonText["상점"];
+        SystemManager.Instance.DialogueManager.StartDialogue(dialogue);
+
     }
 
     public void Move_Market(int money,int hungry)
     {
-        SystemManager.Instance.DialogueTrigger.dialogue = buttonText["상점"];
+        dialogue = buttonText["상점"];
+
         
+        SystemManager.Instance.DialogueManager.StartDialogue(dialogue);
         productsBar.SetActive(true);
     }
 }

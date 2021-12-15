@@ -28,7 +28,7 @@ public class SystemManager : MonoBehaviour
 
     [SerializeField]
     Player player;
-    public Player Hero
+    public Player Player
     {
         get
         {

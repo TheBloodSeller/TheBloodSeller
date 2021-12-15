@@ -49,8 +49,6 @@ public class DialogueTrigger : MonoBehaviour
         if (dialogue == null)
             Debug.LogError("다이알로그가 없음");
 
-        SystemManager.Instance.DialogueManager.StartDialogue(dialogue);
-
     }
 
     public void TriggerDialogue(string bgMatName)
@@ -59,31 +57,7 @@ public class DialogueTrigger : MonoBehaviour
 
         if (dialogue == null)
             Debug.LogError("다이알로그가 없음");
-
-        SystemManager.Instance.DialogueManager.StartDialogue(dialogue);
-
-        if(bgMatName == "Market")
-        {
-            string btnName = EventSystem.current.currentSelectedGameObject.name;
-            switch (btnName)
-            {
-                case "Ramen":
-                    //if (money < 100)
-                    Debug.Log("웅냥");
-                    SystemManager.Instance.Hero.SetHungry(hungry + 1);
-                    break;
-                case "pill":
-                    break;
-                case "knife":
-                    break;
-                case "battery":
-                    break;
-                default:
-                    break;
-            }
-        }
         
-
     }
 
     //대화 흐름 판단하기

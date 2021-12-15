@@ -20,7 +20,7 @@ public class ChangeMat : MonoBehaviour
 
     void Start()
     {
-        background.material = backMat[5];
+        MainScene();
     }
 
     public void OnClickNextStage()
@@ -57,5 +57,10 @@ public class ChangeMat : MonoBehaviour
         background.material = backMat[stageIndex];
         buttonCollection.SetActive(false);
         SystemManager.Instance.DialogueTrigger.TriggerDialogue(btnName);
+    }
+
+    public void MainScene()
+    {
+        background.material = backMat[5];
     }
 }
