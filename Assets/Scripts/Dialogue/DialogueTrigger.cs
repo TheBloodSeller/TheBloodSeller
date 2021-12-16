@@ -10,15 +10,7 @@ public class DialogueTrigger : MonoBehaviour
     SpriteRenderer bgMat;
 
     [SerializeField]
-    int hp;
-    [SerializeField]
-    int blood;
-    [SerializeField]
-    int dream;
-    [SerializeField]
-    int hungry;
-    [SerializeField]
-    int money;
+    Player player => SystemManager.Instance.Player;
 
 
 
@@ -27,21 +19,6 @@ public class DialogueTrigger : MonoBehaviour
         TriggerDialogue("Start");
 
     }
-
-    void Update()
-    {
-       
-    }
-
-    //매 프레임 마다 플레이어의 상태를 받는다
-    public void PlayerImpormation(int hp, int blood, int hungry,int money)
-    {
-        this.hp = hp;
-        this.blood = blood;
-        this.hungry = hungry;
-        this.money = money;
-    }
-
     public void TriggerDialogue(int dream)
     {
         CheakDialogue(dream);
@@ -87,7 +64,7 @@ public class DialogueTrigger : MonoBehaviour
                 break;
 
             case "House":
-                SystemManager.Instance.DialogueStory.Move_House(hp,hungry,blood);
+                SystemManager.Instance.DialogueStory.Move_House(HP,hunger,blood);
                 break;
 
             case "Spaceport":
@@ -100,11 +77,11 @@ public class DialogueTrigger : MonoBehaviour
                 break;
 
             case "Market":
-                SystemManager.Instance.DialogueStory.Move_Market(money,hungry);
+                SystemManager.Instance.DialogueStory.Move_Market(money,hunger);
                 break;
 
             case "BloodShop":
-                SystemManager.Instance.DialogueStory.Move_Bloodshop(blood,hp);
+                SystemManager.Instance.DialogueStory.Move_Bloodshop(blood,HP);
                 break;
 
             default:

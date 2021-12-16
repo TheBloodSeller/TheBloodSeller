@@ -13,6 +13,9 @@ public class DialogueStory : MonoBehaviour
     Dictionary<int, Dialogue> dreamText;
     Dictionary<string, Dialogue> buttonText;
 
+    [SerializeField]
+    Player player => SystemManager.Instance.Player;
+
     void Generate()
     {
 
@@ -86,14 +89,17 @@ public class DialogueStory : MonoBehaviour
         SystemManager.Instance.DialogueManager.StartDialogue(dialogue);
     }
 
-    public void Move_Bloodshop(int blood,int hp)
+    public void Move_Bloodshop(int blood,int HP)
     {
         dialogue = buttonText["혈액관리소"];
-        if(blood < 3600)
-        {
-
-        }
         SystemManager.Instance.DialogueManager.StartDialogue(dialogue);
+        if (blood < 3600 || HP <= 3)
+        {
+            dialogue = new Dialogue("", new string[] { "새미누리는 몸이 안 좋아서 피를 뽑을 수 없다"});
+            SystemManager.Instance.DialogueManager.StartDialogue(dialogue);
+            return;
+        }
+        
     }
 
     public void Move_Spaceport()
@@ -105,20 +111,19 @@ public class DialogueStory : MonoBehaviour
     public void Move_House(int hp, int hungry,int blood)
     {
         
-        SystemManager.Instance.Player.HP = hungry >= 5 ? hp + 3 : hp + 1;
-        SystemManager.Instance.Player.Blood = hungry >= 5 ? blood + 3: blood + 1;
+        player.HP = hungry >= 5 ? hp + 3 : hp + 1;
+        player.Blood = hungry >= 5 ? blood + 3: blood + 1;
         dialogue = buttonText["집"];
         SystemManager.Instance.DialogueManager.StartDialogue(dialogue);
-        dialogue = buttonText["상점"];
-        SystemManager.Instance.DialogueManager.StartDialogue(dialogue);
+
+        //꿈을 시작
+
 
     }
 
     public void Move_Market(int money,int hungry)
     {
         dialogue = buttonText["상점"];
-
-        
         SystemManager.Instance.DialogueManager.StartDialogue(dialogue);
         productsBar.SetActive(true);
     }
