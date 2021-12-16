@@ -77,6 +77,17 @@ public class SystemManager : MonoBehaviour
         }
     }
 
+    [SerializeField]
+    DreamDialogue dreamDialogue;
+    public DreamDialogue DreamDialogue
+    {
+        get
+        {
+            return dreamDialogue;
+        }
+    }
+    
+
  
 
 }

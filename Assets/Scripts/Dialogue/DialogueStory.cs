@@ -108,7 +108,7 @@ public class DialogueStory : MonoBehaviour
         SystemManager.Instance.DialogueManager.StartDialogue(dialogue);
     }
 
-    public void Move_House(int hp, int hungry,int blood)
+    public void Move_House(int hp, int hungry,int blood,int dream)
     {
         
         player.HP = hungry >= 5 ? hp + 3 : hp + 1;
@@ -117,11 +117,11 @@ public class DialogueStory : MonoBehaviour
         SystemManager.Instance.DialogueManager.StartDialogue(dialogue);
 
         //꿈을 시작
-
+        SystemManager.Instance.DreamDialogue.DreamStroy(1);
 
     }
 
-    public void Move_Market(int money,int hungry)
+    public void Move_Market()
     {
         dialogue = buttonText["상점"];
         SystemManager.Instance.DialogueManager.StartDialogue(dialogue);

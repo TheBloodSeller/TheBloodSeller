@@ -57,6 +57,25 @@ public class DialogueManager : MonoBehaviour
         DisplayNextSentence();
     }
 
+    public void StartDialogue(Dialogue[] dialogues)
+    {
+
+        StartCoroutine(DelayDialogue(dialogues));
+    }
+
+    IEnumerator DelayDialogue(Dialogue[] dialogues) {
+
+        Debug.Log("코루틴 실행");
+        for (int i = 0; i < dialogues.Length; i++)
+        {
+            StartDialogue(dialogues[i]);
+            yield return new WaitForSeconds(3);
+
+        }
+    
+    }
+
+
     public void DisplayNextSentence()
     {
         if (sentences.Count == 0)
