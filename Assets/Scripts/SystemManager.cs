@@ -37,12 +37,12 @@ public class SystemManager : MonoBehaviour
     }
 
     [SerializeField]
-    ChangeMat changeMat;
-    public ChangeMat ChangeMat
+    DialogueTrigger dialogueTrigger;
+    public DialogueTrigger DialogueTrigger
     {
         get
         {
-            return changeMat;
+            return dialogueTrigger;
         }
     
     }
@@ -64,6 +64,16 @@ public class SystemManager : MonoBehaviour
         get
         {
             return dialogueShow;
+        }
+    }
+
+    [SerializeField]
+    MainBtn mainBtn;
+    public MainBtn MainBtn
+    {
+        get
+        {
+            return mainBtn;
         }
     }
 

@@ -13,19 +13,23 @@ public class DialogueShow : MonoBehaviour
     [SerializeField] Text nameText;
     [SerializeField] Text sentanceText;
     [SerializeField] SpriteRenderer characterSprite;
+    [SerializeField] MainBtn mainButton => SystemManager.Instance.MainBtn;
     
 
     
 
     int sentanceCount = 0;
 
-    void Start()
+    void Awake()
     {
-        dialogueBarAnim = dialogueBar.GetComponent<Animator>();
+       dialogueBarAnim = dialogueBar.GetComponent<Animator>();
     }
 
     public void StartDialogue(string btnName)
     {
+        //메인 버튼 없애기
+        mainButton.Disapper();
+
         //로드 다이알로그
         dialogue = SystemManager.Instance.XML_Parse.LoadXML(btnName);
         //다이알로그 바 애니메이션
@@ -61,6 +65,7 @@ public class DialogueShow : MonoBehaviour
     void EndDialogue()
     {
         dialogueBarAnim.SetBool("isOpen", false);
+        mainButton.StartCoroutine(mainButton.FadeIN());
         sentanceCount = 0;
     }
 }

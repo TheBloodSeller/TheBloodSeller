@@ -25,6 +25,7 @@ public class XML_Parse : MonoBehaviour
 
     public Dialogue LoadXML(string _storyFile)
     {
+        Debug.Log(_storyFile);
         TextAsset txtAsset = (TextAsset)Resources.Load("XML/Dialogue");
         _DialogueCount = -1;
 

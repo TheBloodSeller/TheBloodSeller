@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-public class ChangeMat : MonoBehaviour
+public class DialogueTrigger : MonoBehaviour
 {
     //0:House
     //1.BloodShop
@@ -20,8 +20,8 @@ public class ChangeMat : MonoBehaviour
 
     void Start()
     {
-        MainScene();
-        
+        SystemManager.Instance.DialogueShow.StartDialogue("Start");
+        background.material = backMat[5];
     }
 
     public void OnClickNextStage()
@@ -67,5 +67,6 @@ public class ChangeMat : MonoBehaviour
     public void MainScene()
     {
         background.material = backMat[5];
+        buttonCollection.SetActive(true);
     }
 }

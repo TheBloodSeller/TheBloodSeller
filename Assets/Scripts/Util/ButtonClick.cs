@@ -9,6 +9,5 @@ public class ButtonClick : MonoBehaviour
     {
         SceneManager.LoadScene("GameScene");
 
-
     }
 }
