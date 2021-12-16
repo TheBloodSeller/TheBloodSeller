@@ -1,27 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
 <dataroot>
+	<!--공원-->
+	<!--버튼-->
     <Park>
         <Id>1</Id>
+		<Name></Name>
         <Dialogue>많은 사람이 있는 광장.</Dialogue>
-		<Name>새미누리</Name>
-
     </Park>
     <Park>
         <Id>2</Id>
-        <Dialogue>높은 분수가 설치된 공원 가운데를 중심으로 숲과 은하가 둘러쌓여 있다</Dialogue>
 		<Name> </Name>
+        <Dialogue>높은 분수가 설치된 공원 가운데를 중심으로 숲과 은하가 둘러쌓여 있다</Dialogue>
     </Park>
     <Park>
         <Id>3</Id>
+		<Name></Name>
         <Dialogue>분수 옆에서 복권을 파는 것 같다</Dialogue>
-		<Name> </Name>
+
     </Park>
     <Park>
         <Id>4</Id>
-        <Dialogue>한 번 해볼까</Dialogue>
-		<Name>새미누리</Name>
+		<Name></Name>
+        <Dialogue>한 번 해보는 게 좋을 것 같다</Dialogue>
     </Park>
-    
+	
+	<!--혈액 관리소-->
+	<!--버튼-->
+	<BloodShop>
+		<ID>1</ID>
+		<name></name>
+		<Dialgue>혈액관리소는 몸만 건강하다면 모든 피를 사주고 있다</Dialgue>
+	</BloodShop>
+	<BloodShop>
+		<ID>2</ID>
+		<name></name>
+		<Dialgue>새미누리는 혈액 채취기를 향해 손을 뻗었다</Dialgue>
+	</BloodShop>
+	
+	<!--건강한 상태-->
+	<GoodBlood>
+		<Id>1</Id>
+		<name></name>
+		<dialogue>혈액 채취기가 새미누리를 스캔하더니</dialogue>
+	</GoodBlood>
+	<GoodBlood>
+		<Id>2</Id>
+		<name></name>
+		<dialogue>모니터에 초록색 화면이 뜬다</dialogue>
+	</GoodBlood>
+	<GoodBlood>
+		<Id>3</Id>
+		<name></name>
+		<dialogue>새미누리의 팔에서 피 500ml가 빠져나갔다</dialogue>
+	</GoodBlood>
+	<GoodBlood>
+		<Id>4</Id>
+		<name></name>
+		<dialogue>새미누리의 통장에 5000크레딧이 들어왔다</dialogue>
+	</GoodBlood>
+
+	<!--건강하지 못한 상태-->
+	<BadBlood>
+		<Id>1</Id>
+		<name></name>
+		<dialogue>혈액 채취기가 새미누리를 스캔하더니</dialogue>
+	</BadBlood>
+	<BadBlood>
+		<Id>2</Id>
+		<name></name>
+		<dialogue>모니터에 초록색 화면이 뜬다</dialogue>
+	</BadBlood>
+	<BadBlood>
+		<Id>3</Id>
+		<name></name>
+		<dialogue>새미누리는 빈손으로 혈액관리소를 나갈 수 밖에 없었다</dialogue>
+	</BadBlood>
+	
+	<!--항구-->
+	<!--버튼-->
+	<SpacePort>
+		<ID>1</ID>
+		<name></name>
+		<Dialogue>새미누리는 승강기를 탔다</Dialogue>
+	</SpacePort>
+	<SpacePort>
+		<ID>2</ID>
+		<name></name>
+		<Dialogue>승강기가 올라갈수록 수직항력이 사라지면서 몸이 가벼워졌다</Dialogue>
+	</SpacePort>
+	<SpacePort>
+		<ID>3</ID>
+		<name></name>
+		<Dialogue>새미누리는 난간을 잡으며 우주항구에 도착했다</Dialogue>
+	</SpacePort>
+	<SpacePort>
+		<ID>4</ID>
+		<name></name>
+		<Dialogue>새미누리는 동생이 있는 유로파로 가고 싶다</Dialogue>
+	</SpacePort>
+	<SpacePort>
+		<ID>5</ID>
+		<name></name>
+		<Dialogue>티켓을 사려면 35,000,000 크레딧이 필요하다</Dialogue>
+	</SpacePort>
+	
+	<!--집-->
+	<!--버튼-->
+	<House>
+		<ID>1</ID>
+		<name></name>
+		<Dialogue>새미누리는 지친 몸을 이끌고 정리를 한 뒤 침대에 누웠다</Dialogue>
+	</House>
+	<House>
+		<ID>2</ID>
+		<name></name>
+		<Dialogue>새미누리는 창문 밖에 별자리를 보면서 스르르 잠이 든다</Dialogue>
+	</House>
+	<House>
+		<ID>3</ID>
+		<name></name>
+		<Dialogue>그날 밤, 새미누리는 꿈을 꾼다</Dialogue>
+	</House>
+	
+	<!--상점-->
+	<!--버튼-->
+	<Market>
+		<ID>1</ID>
+		<Dialogue>새미누리는 생필품을 사러 잡상품 판매소에 갔다</Dialogue>
+	</Market>
 	
 
 </dataroot>
