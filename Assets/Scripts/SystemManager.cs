@@ -37,26 +37,6 @@ public class SystemManager : MonoBehaviour
     }
 
     [SerializeField]
-    DialogueManager dialogueManager;
-    public DialogueManager DialogueManager
-    {
-        get
-        {
-            return dialogueManager;
-        }
-    }
-
-    [SerializeField]
-    DialogueTrigger dialogueTrigger;
-    public DialogueTrigger DialogueTrigger
-    {
-        get
-        {
-            return dialogueTrigger;
-        }
-    }
-
-    [SerializeField]
     ChangeMat changeMat;
     public ChangeMat ChangeMat
     {
@@ -68,26 +48,23 @@ public class SystemManager : MonoBehaviour
     }
 
     [SerializeField]
-    DialogueStory dialogueStory;
-    public DialogueStory DialogueStory
+    XML_Parse xml_Parse;
+    public XML_Parse XML_Parse
     {
         get
         {
-            return dialogueStory;
+            return xml_Parse;
         }
     }
 
     [SerializeField]
-    DreamDialogue dreamDialogue;
-    public DreamDialogue DreamDialogue
+    DialogueShow dialogueShow;
+    public DialogueShow DialogueShow
     {
         get
         {
-            return dreamDialogue;
+            return dialogueShow;
         }
     }
-    
-
- 
 
 }

@@ -21,18 +21,27 @@ public class ChangeMat : MonoBehaviour
     void Start()
     {
         MainScene();
+        
     }
 
     public void OnClickNextStage()
     {
         //클릭한 버튼 오브젝트 가져오기
         string btnName = EventSystem.current.currentSelectedGameObject.name;
+
+        //StartDialogue
+        SystemManager.Instance.DialogueShow.StartDialogue(btnName);
+
         //어디로 갈지 정하는 인덱스
         int stageIndex = 0;
         switch (btnName)
         {
             case "House":
                 stageIndex = 0;
+                break;
+
+            case "BloodShop":
+                stageIndex = 1;
                 break;
 
             case "Spaceport":
@@ -47,16 +56,12 @@ public class ChangeMat : MonoBehaviour
                 stageIndex = 4;
                 break;
 
-            case "BloodShop":
-                stageIndex = 1;
-                break;
-
             default:
                 break;
         }
         background.material = backMat[stageIndex];
         buttonCollection.SetActive(false);
-        SystemManager.Instance.DialogueTrigger.TriggerDialogue(btnName);
+        
     }
 
     public void MainScene()

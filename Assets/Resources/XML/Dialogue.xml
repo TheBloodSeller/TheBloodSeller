@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<dataroot>
+    <Park>
+        <Id>1</Id>
+        <Dialogue>많은 사람이 있는 광장.</Dialogue>
+		<Name>새미누리</Name>
+
+    </Park>
+    <Park>
+        <Id>2</Id>
+        <Dialogue>높은 분수가 설치된 공원 가운데를 중심으로 숲과 은하가 둘러쌓여 있다</Dialogue>
+		<Name> </Name>
+    </Park>
+    <Park>
+        <Id>3</Id>
+        <Dialogue>분수 옆에서 복권을 파는 것 같다</Dialogue>
+		<Name> </Name>
+    </Park>
+    <Park>
+        <Id>4</Id>
+        <Dialogue>한 번 해볼까</Dialogue>
+		<Name>새미누리</Name>
+    </Park>
+    
+	
+
+</dataroot>
