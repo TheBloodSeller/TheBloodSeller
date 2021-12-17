@@ -32,6 +32,7 @@ public class Product : MonoBehaviour
         else
         {
             //구매 실패 시 처리
+            SystemManager.Instance.DialogueShow.StartDialogue("NoMoney");
         }
     }
 
@@ -55,10 +56,12 @@ public class Product : MonoBehaviour
 
     void UseProduct()
     {
+        //플레이어 회복 혹은 허기 회복.
         Player.Hunger += (int)feedAmount;
         Player.HP += (int)healAmount;
+        SystemManager.Instance.DialogueShow.StartDialogue(this.name);
 
-        //플레이어 회복 혹은 허기 회복.
+
     }
 
     void OnValidate()

@@ -158,6 +158,32 @@
 		<Name></Name>
 		<Dialogue>새미누리는 생필품을 사러 잡상품 판매소에 갔다</Dialogue>
 	</Market>
-	
+	<!--돈이 없었을 시-->
+	<NoMoney>
+		<ID>1</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 이 물건을 살 돈이 없다</Dialogue>
+	</NoMoney>
+	<!--물건들을 샀을 때-->
+	<Ramen>
+		<ID>1</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 라면으로 허기를 달랬다</Dialogue>
+	</Ramen>
+	<Pill>
+		<ID>1</ID>
+		<Name></Name>
+		<Dialogue>약을 먹으니 몸이 회복되는 느낌이다</Dialogue>
+	</Pill>
+	<Knife>
+		<ID>1</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 삶이 힘들긴 하지만,</Dialogue>
+	</Knife>
+	<Knife>
+		<ID>2</ID>
+		<Name></Name>
+		<Dialogue>아직 그런 선택을 할 정도는 아니다</Dialogue>
+	</Knife>
 
 </dataroot>

@@ -35,7 +35,6 @@ public class MainBtn : MonoBehaviour
 
     public IEnumerator FadeIN()
     {
-        Debug.Log("코루틴 실행");
         for (float i = 0f; i <= 1; i += 0.1f)
         {
             Color color = new Vector4(1, 1, 1, i);
@@ -47,7 +46,7 @@ public class MainBtn : MonoBehaviour
     }
 
     public void OnClick() {
-        
+        SystemManager.Instance.DialogueShow.SentanceCount = 0;
         StartCoroutine("FadeOut");
         SystemManager.Instance.DialogueTrigger.MainScene();
     }

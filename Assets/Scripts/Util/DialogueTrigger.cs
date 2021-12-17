@@ -38,29 +38,39 @@ public class DialogueTrigger : MonoBehaviour
         {
             case "House":
                 stageIndex = 0;
+                background.material = backMat[stageIndex];
+                buttonCollection.SetActive(false);
+                
                 break;
 
             case "BloodShop":
                 stageIndex = 1;
+                background.material = backMat[stageIndex];
+                buttonCollection.SetActive(false);
                 break;
 
             case "Spaceport":
                 stageIndex = 2;
+                background.material = backMat[stageIndex];
+                buttonCollection.SetActive(false);
                 break;
 
             case "Park":
                 stageIndex = 3;
+                background.material = backMat[stageIndex];
+                buttonCollection.SetActive(false);
                 break;
 
             case "Market":
                 stageIndex = 4;
+                background.material = backMat[stageIndex];
+                buttonCollection.SetActive(false);
+                SystemManager.Instance.Market.Move();
                 break;
 
             default:
                 break;
         }
-        background.material = backMat[stageIndex];
-        buttonCollection.SetActive(false);
         
     }
 

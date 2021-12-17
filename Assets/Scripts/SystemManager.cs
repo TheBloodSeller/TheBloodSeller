@@ -38,7 +38,7 @@ public class SystemManager : MonoBehaviour
 
     [SerializeField]
     DialogueTrigger dialogueTrigger;
-    public DialogueTrigger DialogueTrigger
+    public DialogueTrigger DialogueTrigger 
     {
         get
         {
@@ -77,4 +77,13 @@ public class SystemManager : MonoBehaviour
         }
     }
 
+    [SerializeField]
+    Market market;
+    public Market Market
+    {
+        get
+        {
+            return market;
+        }
+    }
 }

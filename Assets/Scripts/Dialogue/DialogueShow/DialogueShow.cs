@@ -19,6 +19,17 @@ public class DialogueShow : MonoBehaviour
     
 
     int sentanceCount = 0;
+    public int SentanceCount
+    {
+        get
+        {
+            return sentanceCount;
+        }
+        set
+        {
+            sentanceCount = value;
+        }
+    }
 
     void Awake()
     {
@@ -27,6 +38,7 @@ public class DialogueShow : MonoBehaviour
 
     public void StartDialogue(string btnName)
     {
+        Debug.Log(btnName);
         //메인 버튼 없애기
         mainButton.Disapper();
 
@@ -41,6 +53,7 @@ public class DialogueShow : MonoBehaviour
     
     void ShowDialogue()
     {
+        Debug.Log(sentanceCount);
         nameText.text = dialogue.names[sentanceCount];
         sentanceText.text = dialogue.sentences[sentanceCount];
         characterSprite.sprite = dialogue.img[sentanceCount];
@@ -64,8 +77,9 @@ public class DialogueShow : MonoBehaviour
 
     void EndDialogue()
     {
+        sentanceCount = 0;
         dialogueBarAnim.SetBool("isOpen", false);
         mainButton.StartCoroutine(mainButton.FadeIN());
-        sentanceCount = 0;
+        
     }
 }
