@@ -6,7 +6,7 @@ public class MovePlace : MonoBehaviour
 {
     public virtual void Move()
     {
-
+        SystemManager.Instance.DialogueShow.SentanceCount = 0;
     }
 
     public virtual void GoOut()

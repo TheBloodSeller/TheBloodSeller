@@ -76,6 +76,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public void MainScene()
     {
+        SystemManager.Instance.Market.GoOut();
         background.material = backMat[5];
         buttonCollection.SetActive(true);
     }

@@ -13,6 +13,7 @@ public class Market : MovePlace
     }
     public override void Move()
     {
+        base.Move();
         productsBar.SetActive(true);
     }
     

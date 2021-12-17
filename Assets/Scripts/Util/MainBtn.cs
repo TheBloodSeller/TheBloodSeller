@@ -46,7 +46,7 @@ public class MainBtn : MonoBehaviour
     }
 
     public void OnClick() {
-        SystemManager.Instance.DialogueShow.SentanceCount = 0;
+
         StartCoroutine("FadeOut");
         SystemManager.Instance.DialogueTrigger.MainScene();
     }
