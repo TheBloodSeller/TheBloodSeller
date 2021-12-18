@@ -59,6 +59,7 @@ public class DialogueTrigger : MonoBehaviour
                 stageIndex = 3;
                 background.material = backMat[stageIndex];
                 buttonCollection.SetActive(false);
+                SystemManager.Instance.Park.Move();
                 break;
 
             case "Market":
@@ -76,7 +77,6 @@ public class DialogueTrigger : MonoBehaviour
 
     public void MainScene()
     {
-        SystemManager.Instance.Market.GoOut();
         background.material = backMat[5];
         buttonCollection.SetActive(true);
     }

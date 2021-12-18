@@ -38,7 +38,6 @@ public class DialogueShow : MonoBehaviour
 
     public void StartDialogue(string btnName)
     {
-        Debug.Log(btnName);
         //메인 버튼 없애기
         mainButton.Disapper();
 
@@ -53,7 +52,7 @@ public class DialogueShow : MonoBehaviour
     
     void ShowDialogue()
     {
-        Debug.Log(sentanceCount);
+
         nameText.text = dialogue.names[sentanceCount];
         sentanceText.text = dialogue.sentences[sentanceCount];
         characterSprite.sprite = dialogue.img[sentanceCount];

@@ -86,4 +86,14 @@ public class SystemManager : MonoBehaviour
             return market;
         }
     }
+
+    [SerializeField]
+    Park park;
+    public Park Park
+    {
+        get
+        {
+            return park;
+        }
+    }
 }

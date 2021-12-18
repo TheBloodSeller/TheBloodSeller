@@ -47,8 +47,11 @@ public class MainBtn : MonoBehaviour
 
     public void OnClick() {
 
+        SystemManager.Instance.Market.GoOut();
+        SystemManager.Instance.Park.GoOut();
         StartCoroutine("FadeOut");
         SystemManager.Instance.DialogueTrigger.MainScene();
+
     }
 
     
