@@ -71,7 +71,7 @@
 	<Loseing>
 		<ID>1</ID>
 		<Name></Name>
-		<Dialogue>새미누리는</Dialogue>
+		<Dialogue>새미누리는 100 크레딧을 그냥 날렸다</Dialogue>
 	</Loseing>
 
 
@@ -207,5 +207,98 @@
 		<Name></Name>
 		<Dialogue>아직 그런 선택을 할 정도는 아니다</Dialogue>
 	</Knife>
+	
+	<!--엔딩-->
+	<!--해피 엔딩-->
+	<HappyEnding>
+		<ID>1</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 유로파에 무사히 도착하였다</Dialogue>
+	</HappyEnding>
+	<HappyEnding>
+		<ID>2</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 우주항구에서 해미누리를 열심히 찾아다녔다</Dialogue>
+	</HappyEnding>
+	<HappyEnding>
+		<ID>3</ID>
+		<Name>새미누리</Name>
+		<Dialogue>혹시 함선 조종사 해미누리를 보신적이 있나요??</Dialogue>
+	</HappyEnding>
+	<HappyEnding>
+		<ID>4</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 열심히 돌아다니다가 우연히 대합실 앞을 지나쳤다</Dialogue>
+	</HappyEnding>
+	<HappyEnding>
+		<ID>5</ID>
+		<Name></Name>
+		<Dialogue>익숙한 얼굴이 안내원 로봇과 싸우고 있었다</Dialogue>
+	</HappyEnding>
+	<HappyEnding>
+		<ID>6</ID>
+		<Name>해미누리</Name>
+		<Dialogue>운석충돌 위험 때문에 한시간이나 일찍 출발한다는게 말이 돼?</Dialogue>
+	</HappyEnding>
+	<HappyEnding>
+		<ID>7</ID>
+		<Name>안내원 로봇</Name>
+		<Dialogue>죄송합니다, 저희는 규정대로 처리하였습니다</Dialogue>
+	</HappyEnding>
+	<HappyEnding>
+		<ID>8</ID>
+		<Name>해미누리</Name>
+		<Dialogue>세레스로 가기 위해 내가 노가다 뛰면서 얼마나 열심히 표값을 모은줄 알아?</Dialogue>
+	</HappyEnding>
+	<HappyEnding>
+		<ID>9</ID>
+		<Name>안내원 로봇</Name>
+		<Dialogue>민원창구로 가서 보상절차를 밟아주시길 바랍니다</Dialogue>
+	</HappyEnding>
+	<HappyEnding>
+		<ID>10</ID>
+		<Name>해미누리</Name>
+		<Dialogue>지금 돈이 중요해? 이번 껄 놓치면 다음 함선까지 몇년을 기다려야 하는지 알아?</Dialogue>
+	</HappyEnding>
+	<HappyEnding>
+		<ID>11</ID>
+		<Name>해미누리</Name>
+		<Dialogue>2년 6개월... 자그마치 2년 6개월이라고!!</Dialogue>
+	</HappyEnding>
+	<HappyEnding>
+		<ID>12</ID>
+		<Name>안내원 로봇</Name>
+		<Dialogue>죄송합니다, 저희는 규정대로 처리하였습니다</Dialogue>
+	</HappyEnding>
+	<HappyEnding>
+		<ID>13</ID>
+		<Name>안내원 로봇</Name>
+		<Dialogue>민원창구로 가서 보상절차를 밟아주시길 바랍니다</Dialogue>
+	</HappyEnding>
+	<HappyEnding>
+		<ID>14</ID>
+		<Name>해미누리</Name>
+		<Dialogue>똑같은 말 그만..!</Dialogue>
+	</HappyEnding>
+	<HappyEnding>
+		<ID>15</ID>
+		<Name>새미누리</Name>
+		<Dialogue>해미누리야... 이제 괜찮아...</Dialogue>
+	</HappyEnding>
+	<HappyEnding>
+		<ID>16</ID>
+		<Name></Name>
+		<Dialogue>해미누리는 익숙한 목소리에 고개를 돌렸다</Dialogue>
+	</HappyEnding>
+	<HappyEnding>
+		<ID>17</ID>
+		<Name>해미누리</Name>
+		<Dialogue>언니..?</Dialogue>
+	</HappyEnding>
+	<HappyEnding>
+		<ID>18</ID>
+		<Name></Name>
+		<Dialogue>-끝-</Dialogue>
+	</HappyEnding>
 
 </dataroot>

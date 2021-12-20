@@ -54,7 +54,6 @@ public class Park : MovePlace
         CardBar.SetActive(true);
         for (int i = 0; i < numText.Length; i++)
         {
-            Debug.Log("¿õ³Ä¤À¤·");
             nums[i] = Random.Range(1, 10);
             numText[i].text = nums[i].ToString();
         }

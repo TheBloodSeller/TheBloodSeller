@@ -53,6 +53,7 @@ public class DialogueTrigger : MonoBehaviour
                 stageIndex = 2;
                 background.material = backMat[stageIndex];
                 buttonCollection.SetActive(false);
+                SystemManager.Instance.Spaceport.Move();
                 break;
 
             case "Park":

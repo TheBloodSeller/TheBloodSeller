@@ -96,4 +96,14 @@ public class SystemManager : MonoBehaviour
             return park;
         }
     }
+
+    [SerializeField]
+    Spaceport spaceport;
+    public Spaceport Spaceport
+    {
+        get
+        {
+            return spaceport;
+        }
+    }
 }
