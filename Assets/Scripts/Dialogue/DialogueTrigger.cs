@@ -11,6 +11,7 @@ public class DialogueTrigger : MonoBehaviour
     //3.Park
     //4.Market
     //5.Space
+    //6.Uropa
     [SerializeField]
     Material[] backMat;
     [SerializeField]
@@ -40,7 +41,7 @@ public class DialogueTrigger : MonoBehaviour
                 stageIndex = 0;
                 background.material = backMat[stageIndex];
                 buttonCollection.SetActive(false);
-                
+                SystemManager.Instance.House.Move();
                 break;
 
             case "BloodShop":
@@ -80,5 +81,10 @@ public class DialogueTrigger : MonoBehaviour
     {
         background.material = backMat[5];
         buttonCollection.SetActive(true);
+    }
+
+    public void ChangeBG(int num)
+    {
+        background.material = backMat[num];
     }
 }

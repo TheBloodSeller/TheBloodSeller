@@ -34,6 +34,8 @@ public class Spaceport : MovePlace
         }
         else
         {
+            //유로파 배경
+            SystemManager.Instance.DialogueTrigger.ChangeBG(6);
             //해피 엔딩
             SystemManager.Instance.DialogueShow.StartDialogue("HappyEnding");
         }

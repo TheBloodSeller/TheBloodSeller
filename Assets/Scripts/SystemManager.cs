@@ -106,4 +106,15 @@ public class SystemManager : MonoBehaviour
             return spaceport;
         }
     }
+
+    [SerializeField]
+    House house;
+    public House House 
+    {
+        get
+        {
+            return house;
+        }
+    }
+
 }

@@ -1239,6 +1239,7 @@ Transform:
   - {fileID: 1098148303}
   - {fileID: 1157998342}
   - {fileID: 1467178234}
+  - {fileID: 2020560355}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1950,6 +1951,7 @@ MonoBehaviour:
   market: {fileID: 1098148304}
   park: {fileID: 1157998343}
   spaceport: {fileID: 1467178235}
+  house: {fileID: 2020560356}
 --- !u!4 &647090995
 Transform:
   m_ObjectHideFlags: 0
@@ -4089,6 +4091,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: b89e99ea1c9c344459904dc46a4aa66c, type: 2}
   - {fileID: 2100000, guid: 82b26b1a6cd8b4a4e8b649d90262fe74, type: 2}
   - {fileID: 2100000, guid: 6f7fa4d80235b3a46a7d66b319146ef4, type: 2}
+  - {fileID: 2100000, guid: db9ba50b22b674f4c9c5da701f453699, type: 2}
   background: {fileID: 1030430723}
   buttonCollection: {fileID: 775445762}
 --- !u!4 &1590943986
@@ -5327,6 +5330,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1978083586}
   m_CullTransparentMesh: 1
+--- !u!1 &2020560354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2020560355}
+  - component: {fileID: 2020560356}
+  m_Layer: 0
+  m_Name: House
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2020560355
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020560354}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 515421556}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2020560356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020560354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47c35dd5c8e41e94fa1d43171fb56f57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHouse: 0
 --- !u!1 &2128839936
 GameObject:
   m_ObjectHideFlags: 0

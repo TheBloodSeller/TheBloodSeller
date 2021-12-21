@@ -301,4 +301,644 @@
 		<Dialogue>-끝-</Dialogue>
 	</HappyEnding>
 
+
+	<!--꿈-->
+	<!--1번째-->
+	<Dream1>
+		<ID>1</ID>
+		<Name></Name>
+		<Dialogue>새미누리가 태어난지 1160일</Dialogue>
+	</Dream1>
+	<Dream1>
+		<ID>2</ID>
+		<Name></Name>
+		<Dialogue>구름이 가득 찬 공중도시</Dialogue>
+	</Dream1>
+	<Dream1>
+		<ID>3</ID>
+		<Name></Name>
+		<Dialogue>새미누리와 해미누리는 같은 남매다</Dialogue>
+	</Dream1>
+	<Dream1>
+		<ID>4</ID>
+		<Name></Name>
+		<Dialogue>그들은 홀로그램에 띄워진 글자들을 익히고 있다</Dialogue>
+	</Dream1>
+	<Dream1>
+		<ID>5</ID>
+		<Name>새미누리</Name>
+		<Dialogue>가... 나... 다...</Dialogue>
+	</Dream1>
+	
+	<!--2번째-->
+	<Dream2>
+		<ID>1</ID>
+		<Name></Name>
+		<Dialogue>새미누리가 태어난지 1480일</Dialogue>
+	</Dream2>
+	<Dream2>
+		<ID>2</ID>
+		<Name></Name>
+		<Dialogue>구름이 가득찬 공중도시</Dialogue>
+	</Dream2>
+	<Dream2>
+		<ID>3</ID>
+		<Name></Name>
+		<Dialogue>어느날 어머니는 새미누리에게 당부했다</Dialogue>
+	</Dream2>
+	<Dream2>
+		<ID>4</ID>
+		<Name></Name>
+		<Dialogue>당신이 나갔다 올 동안 동생인 해미누리를 잘 보살피라고 했다</Dialogue>
+	</Dream2>
+	<Dream2>
+		<ID>5</ID>
+		<Name></Name>
+		<Dialogue>그 다음날 어머니는 오지 않았다</Dialogue>
+	</Dream2>
+	<Dream2>
+		<ID>6</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 배가 고파 해미누리의 이유식을 먹었다</Dialogue>
+	</Dream2>
+	<Dream2>
+		<ID>7</ID>
+		<Name></Name>
+		<Dialogue>그 다음날 어머니가 돌아 오셨다</Dialogue>
+	</Dream2>
+	<Dream2>
+		<ID>8</ID>
+		<Name></Name>
+		<Dialogue>어머니는 그날 남에게 의지하는 삶을 살지 말라고 가르쳐주셨다</Dialogue>
+	</Dream2>
+	
+	<!--3번째-->
+	<Dream3>
+		<ID>1</ID>
+		<Name></Name>
+		<Dialogue>새미누리가 태어난지 1640일</Dialogue>
+	</Dream3>
+	<Dream3>
+		<ID>2</ID>
+		<Name></Name>
+		<Dialogue>금성위 구름이 가득찬 공중도시</Dialogue>
+	</Dream3>
+	<Dream3>
+		<ID>3</ID>
+		<Name></Name>
+		<Dialogue>새미누리와 해미누리는 배우는 것을 좋아했다</Dialogue>
+	</Dream3>
+	<Dream3>
+		<ID>4</ID>
+		<Name></Name>
+		<Dialogue>이번에 배운 내용은 태양계 행성이였다</Dialogue>
+	</Dream3>
+	<Dream3>
+		<ID>5</ID>
+		<Name></Name>
+		<Dialogue>수성, 금성, 지구, 화성, 세레스, 목성,</Dialogue>
+	</Dream3>
+	<Dream3>
+		<ID>6</ID>
+		<Name></Name>
+		<Dialogue>토왕성, 천왕성, 명왕성, 하우메아</Dialogue>
+	</Dream3>
+	<Dream3>
+		<ID>7</ID>
+		<Name></Name>
+		<Dialogue>마케마케, 에리스, 콰오아, 세드나</Dialogue>
+	</Dream3>
+	
+	<!--4번째-->
+	<Dream4>
+		<ID>1</ID>
+		<Name></Name>
+		<Dialogue>새미누리가 태어난지 5년</Dialogue>
+	</Dream4>
+	<Dream4>
+		<ID>2</ID>
+		<Name></Name>
+		<Dialogue>새미누리의 시간이 5바퀴를 돌았다</Dialogue>
+	</Dream4>
+	<Dream4>
+		<ID>3</ID>
+		<Name></Name>
+		<Dialogue>해미누리도 새미누리와 생일이 같았다</Dialogue>
+	</Dream4>
+	<Dream4>
+		<ID>4</ID>
+		<Name></Name>
+		<Dialogue>해미누리의 시간은 3바퀴를 돌았다</Dialogue>
+	</Dream4>
+	<Dream4>
+		<ID>5</ID>
+		<Name></Name>
+		<Dialogue>어머니께서 생일잔치를 열어주셨다</Dialogue>
+	</Dream4>
+	<Dream4>
+		<ID>6</ID>
+		<Name>새미누리</Name>
+		<Dialogue>생일 축하 합니다~ 생일 축하 합니다~</Dialogue>
+	</Dream4>
+	<Dream4>
+		<ID>7</ID>
+		<Name>새미누리</Name>
+		<Dialogue>사랑하는...</Dialogue>
+	</Dream4>
+	<Dream4>
+		<ID>8</ID>
+		<Name></Name>
+		<Dialogue>누구를 불러야하지?</Dialogue>
+	</Dream4>
+	
+	<!--5번째-->
+	<Dream5>
+		<ID>1</ID>
+		<Name></Name>
+		<Dialogue>새미누리가 태어난지 1960일</Dialogue>
+	</Dream5>
+	<Dream5>
+		<ID>2</ID>
+		<Name></Name>
+		<Dialogue>금성 위 구름이 가득찬 공중도시</Dialogue>
+	</Dream5>
+	<Dream5>
+		<ID>3</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 옥상 위에 있는 망원경을 잡았다</Dialogue>
+	</Dream5>
+	<Dream5>
+		<ID>4</ID>
+		<Name></Name>
+		<Dialogue>하늘에는 초록과 파랑빛이 섞인 지구가 아름답게 떠 있었다</Dialogue>
+	</Dream5>
+	<Dream5>
+		<ID>5</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 그 옆에 새하얀 달도 바라보았다</Dialogue>
+	</Dream5>
+	<Dream5>
+		<ID>6</ID>
+		<Name></Name>
+		<Dialogue>그녀에게는 다 너무 작았다</Dialogue>
+	</Dream5>
+
+	<!--6번째-->
+	<Dream6>
+		<ID>1</ID>
+		<Name></Name>
+		<Dialogue>새미누리가 태어난지 2280일</Dialogue>
+	</Dream6>
+	<Dream6>
+		<ID>2</ID>
+		<Name></Name>
+		<Dialogue>금성에서 경도 23크레딧 위도 03크레딧에 위치한 도시</Dialogue>
+	</Dream6>
+	<Dream6>
+		<ID>3</ID>
+		<Name>새미누리</Name>
+		<Dialogue>자, 이게 드론이라는 거야</Dialogue>
+	</Dream6>
+	<Dream6>
+		<ID>4</ID>
+		<Name>해미누리</Name>
+		<Dialogue>외계인 같다</Dialogue>
+	</Dream6>
+	<Dream6>
+		<ID>5</ID>
+		<Name>새미누리</Name>
+		<Dialogue>유로파나 타이탄이나 엔셀라듀스의 어떤 생물체도 안 닮았는데?</Dialogue>
+	</Dream6>
+	<Dream6>
+		<ID>6</ID>
+		<Name></Name>
+		<Dialogue>해미누리는 스마트폰을 켜서 사진을 보여줬다</Dialogue>
+	</Dream6>
+	<Dream6>
+		<ID>7</ID>
+		<Name>해미누리</Name>
+		<Dialogue>태양계 밖 외계인이라...</Dialogue>
+	</Dream6>
+	<Dream6>
+		<ID>8</ID>
+		<Name>새미누리</Name>
+		<Dialogue>스마트폰으로 이상한 거 보지 말라고 했잖아</Dialogue>
+	</Dream6>
+	<Dream6>
+		<ID>9</ID>
+		<Name>해미누리</Name>
+		<Dialogue>재밌잖아, 같이 보자</Dialogue>
+	</Dream6>
+	
+	<!--7번째-->
+	<Dream7>
+		<ID>1</ID>
+		<Name></Name>
+		<Dialogue>새미누리가 태어난지 2600일</Dialogue>
+	</Dream7>
+	<Dream7>
+		<ID>2</ID>
+		<Name></Name>
+		<Dialogue>금성 저궤도 우주정거장</Dialogue>
+	</Dream7>
+	<Dream7>
+		<ID>3</ID>
+		<Name>새미누리</Name>
+		<Dialogue>우주승강기 타고 어디 가는지 알지, 해미야?</Dialogue>
+	</Dream7>
+	<Dream7>
+		<ID>4</ID>
+		<Name>해미누리</Name>
+		<Dialogue>금성의 위성에 간다고 했잖아</Dialogue>
+	</Dream7>
+	<Dream7>
+		<ID>5</ID>
+		<Name>새미누리</Name>
+		<Dialogue>어... 그랬나?</Dialogue>
+	</Dream7>
+	<Dream7>
+		<ID>6</ID>
+		<Name>해미누리</Name>
+		<Dialogue>여기 우주선의 종착점에 가면 알 수 있을 꺼야</Dialogue>
+	</Dream7>
+	<Dream7>
+		<ID>7</ID>
+		<Name>새미누리</Name>
+		<Dialogue>그런거 없어</Dialogue>
+	</Dream7>
+	<Dream7>
+		<ID>8</ID>
+		<Name>해미누리</Name>
+		<Dialogue>그럼 우리 어디 가는거야?</Dialogue>
+	</Dream7>
+	<Dream7>
+		<ID>9</ID>
+		<Name>새미누리</Name>
+		<Dialogue>어, 어라?</Dialogue>
+	</Dream7>
+	<Dream7>
+		<ID>10</ID>
+		<Name></Name>
+		<Dialogue>어느순간 우주승강기가 목적지에 도착했다</Dialogue>
+	</Dream7>
+	<Dream7>
+		<ID>11</ID>
+		<Name>새미누리</Name>
+		<Dialogue>도착?</Dialogue>
+	</Dream7>
+	<Dream7>
+		<ID>12</ID>
+		<Name>해미누리</Name>
+		<Dialogue>우와, 사람들이 건물을 공중에 띄워났어</Dialogue>
+	</Dream7>
+	<Dream7>
+		<ID>12</ID>
+		<Name>새미누리</Name>
+		<Dialogue>와 진짜 아름답다</Dialogue>
+	</Dream7>
+	
+	<!--8번째-->
+	<Dream8>
+		<ID>1</ID>
+		<Name></Name>
+		<Dialogue>새미누리가 태어난지 2760일</Dialogue>
+	</Dream8>
+	<Dream8>
+		<ID>2</ID>
+		<Name></Name>
+		<Dialogue>새미누리와 해미누리는 가장 오래된 도시로 여행을 왔다</Dialogue>
+	</Dream8>
+	<Dream8>
+		<ID>3</ID>
+		<Name>해미누리</Name>
+		<Dialogue>언니, 지구에서 가장 오래된 도시가 어디일까?</Dialogue>
+	</Dream8>
+	
+	<!--9번째-->
+	<Dream9>
+		<ID>1</ID>
+		<Name></Name>
+		<Dialogue>새미누리가 태어난지 7880일</Dialogue>
+	</Dream9>
+	<Dream9>
+		<ID>2</ID>
+		<Name></Name>
+		<Dialogue>금성제1종합대학교</Dialogue>
+	</Dream9>
+	<Dream9>
+		<ID>3</ID>
+		<Name>새미누리</Name>
+		<Dialogue>해미야 수고했어, 학사 취득했어</Dialogue>
+	</Dream9>
+	<Dream9>
+		<ID>3</ID>
+		<Name>해미누리</Name>
+		<Dialogue>언니 축하해! 고생했어!</Dialogue>
+	</Dream9>
+	<Dream9>
+		<ID>4</ID>
+		<Name>해미누리</Name>
+		<Dialogue>어머니가 옆에 있으셨다면 좋았을텐데...</Dialogue>
+	</Dream9>
+	<Dream9>
+		<ID>5</ID>
+		<Name>새미누리</Name>
+		<Dialogue>어머니가 옆에 있으셨다면 뭐라고 하셨을까?</Dialogue>
+	</Dream9>
+	<Dream9>
+		<ID>6</ID>
+		<Name>해미누리</Name>
+		<Dialogue>근데 이제 우리 뭐해?</Dialogue>
+	</Dream9>
+	<Dream9>
+		<ID>7</ID>
+		<Name>새미누리</Name>
+		<Dialogue>아, 학교에서 지금 정부가 태양계 개발 산업이 진행중이란걸 들었어</Dialogue>
+	</Dream9>
+	<Dream9>
+		<ID>8</ID>
+		<Name>해미누리</Name>
+		<Dialogue>웅?</Dialogue>
+	</Dream9>
+	<Dream9>
+		<ID>9</ID>
+		<Name>새미누리</Name>
+		<Dialogue>물자를 수송해줄 인력들을 구한다고 했어</Dialogue>
+	</Dream9>
+	<Dream9>
+		<ID>10</ID>
+		<Name>새미누리</Name>
+		<Dialogue>우리가 거기서 일하는 건 어때?</Dialogue>
+	</Dream9>
+	<Dream9>
+		<ID>11</ID>
+		<Name>새미누리</Name>
+		<Dialogue>우주함선 비행사가 되는거야! 우리의 오랜 꿈이였잖아!</Dialogue>
+	</Dream9>
+	<Dream9>
+		<ID>12</ID>
+		<Name>새미누리</Name>
+		<Dialogue>게다가 유로파에서 우주함선을 무상 제공해준다고 들었어</Dialogue>
+	</Dream9>
+	<Dream9>
+		<ID>13</ID>
+		<Name>해미누리</Name>
+		<Dialogue>좋은 생각인데? 당장 유로파로 떠나자!</Dialogue>
+	</Dream9>
+
+	<!--10번째-->
+	<Dream10>
+		<ID>1</ID>
+		<Name></Name>
+		<Dialogue>새미누리가 태어난지 8353일</Dialogue>
+	</Dream10>
+	<Dream10>
+		<ID>2</ID>
+		<Name></Name>
+		<Dialogue>금성중궤도 우주항구</Dialogue>
+	</Dream10>
+	<Dream10>
+		<ID>3</ID>
+		<Name></Name>
+		<Dialogue>새미누리와 해미누리는 부푼 꿈을 안고 항구에서 탑승준비를 했다</Dialogue>
+	</Dream10>
+	<Dream10>
+		<ID>4</ID>
+		<Name>해미누리</Name>
+		<Dialogue>앞으로 어떤 일이 펼쳐지게 될까?</Dialogue>
+	</Dream10>	
+	<Dream10>
+		<ID>5</ID>
+		<Name>새미누리</Name>
+		<Dialogue>이제 이곳은 추억 속의 행성이 되겠네</Dialogue>
+	</Dream10>
+	<Dream10>
+		<ID>6</ID>
+		<Name>해미누리</Name>
+		<Dialogue>자, 이제 슬슬 탑승할까?</Dialogue>
+	</Dream10>
+	<Dream10>
+		<ID>7</ID>
+		<Name>새미누리</Name>
+		<Dialogue>그래, 가자!</Dialogue>
+	</Dream10>
+	
+	<!--11번째-->
+	<Dream11>
+		<ID>1</ID>
+		<Name></Name>
+		<Dialogue>새미누리가 태어난지 8355일</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>2</ID>
+		<Name></Name>
+		<Dialogue>금성에서 유로파로 가는 우주함선 안, 세레스 스윙바이 준비 중</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>3</ID>
+		<Name></Name>
+		<Dialogue>새미누리와 해미누리는 식사를 하고 있다</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>4</ID>
+		<Name>새미누리</Name>
+		<Dialogue>창 밖을 봐, 별들이 수놓아져 있어</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>5</ID>
+		<Name>해미누리</Name>
+		<Dialogue>진짜 많다, 근데 별들은 왜 하얀색 밖에 없어?</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>6</ID>
+		<Name>새미누리</Name>
+		<Dialogue>별들이 너무 밝아서 그래, 별이 존재하는 곳 까지 가보면 각각 별들의 색이 있어</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>7</ID>
+		<Name>해미누리</Name>
+		<Dialogue>헤헤 그렇구나, 그럼 저 별들에 사는 사람들은 태양의 색을 궁금해 할까?</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>8</ID>
+		<Name>새미누리</Name>
+		<Dialogue>재미있는 생각이네, 앞으로도 우리 이렇게 행복하게 살았으면 좋겠어</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>9</ID>
+		<Name></Name>
+		<Dialogue>둘은 식사를 마치고 함선 가운데의 큰 정원을 산책했다</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>10</ID>
+		<Name></Name>
+		<Dialogue>그 순간이 너무 평화로워서 새미누리는 시간을 멈추고 싶었다</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>11</ID>
+		<Name></Name>
+		<Dialogue>그러나...</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>12</ID>
+		<Name>해미누리</Name>
+		<Dialogue>악!</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>13</ID>
+		<Name></Name>
+		<Dialogue>공원의 장식물들이 덜덜덜 떨리더니 조명들이 꺼지기 시작했다</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>14</ID>
+		<Name>새미누리</Name>
+		<Dialogue>지진인가..?</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>15</ID>
+		<Name></Name>
+		<Dialogue>그때 긴급방송이 울려왔다</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>16</ID>
+		<Name></Name>
+		<Dialogue>우주해적이 침입해 왔으니, 즉시 대피선으로 이동하라고</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>17</ID>
+		<Name></Name>
+		<Dialogue>하지만 어디로 대피해야할지 감이 안온다</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>18</ID>
+		<Name></Name>
+		<Dialogue>게다가 곳곳에서 연기가 피어올라 사방이 자욱해졌다</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>19</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 목터져라 해미누리를 찾아 다니다 본체의 조정실에 다다랐다</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>20</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 구조선으로 가는 대신 우주선을 직접 조종하기로 했다</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>21</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 남아있는 연료를 확인했다</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>22</ID>
+		<Name></Name>
+		<Dialogue>유로파까지 다시 추진할 연료는 없을 꺼 같고, 우주해적을 막아줄 세레스로 간다</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>23</ID>
+		<Name></Name>
+		<Dialogue>뒤쪽 엔진을 끄고 앞쪽엔진을 켜서 세레스로 향하는 궤도를 만든다</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>24</ID>
+		<Name></Name>
+		<Dialogue>우주해적이 따라온다면 세레스의 방위체가 우주함선을 저격할 것이다</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>25</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 조종바를 잡고 속도를 감축하고 다시 올렸다</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>26</ID>
+		<Name></Name>
+		<Dialogue>실제로 운전해 본 건 처음이였지만 성공적이였다</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>27</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 무사히 세레스의 우주정거장에 도킹하였다</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>28</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 게이트를 통과하자마자 쓰러져 병원으로 실려갔다</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>29</ID>
+		<Name></Name>
+		<Dialogue>이후 새미누리는 해당 사건에 조사를 받았다</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>30</ID>
+		<Name></Name>
+		<Dialogue>다른사람의 함선을 빼돌려 무단으로 조종한것은 처벌 받지 않았지만, 유로파로 보내주지 못한다고 한다</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>31</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 울고 싶었다</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>32</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 창문너머로 분해되는 우주선을 멍하니 바라봤다</Dialogue>
+	</Dream11>
+	<Dream11>
+		<ID>33</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 유로파로 갈 날을 기다리며, 셋방을 구하고 일자리를 구했다</Dialogue>
+	</Dream11>
+	
+	<!--12번째-->
+	<Dream12>
+		<ID>1</ID>
+		<Name></Name>
+		<Dialogue>새미누리가 태어난지 100000일</Dialogue>
+	</Dream12>
+	<Dream12>
+		<ID>2</ID>
+		<Name></Name>
+		<Dialogue>세레스 고궤도 우주거주구 4A-28B</Dialogue>
+	</Dream12>
+	<Dream12>
+		<ID>3</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 100000일 째 날을 기념도 못하고 있다</Dialogue>
+	</Dream12>
+	<Dream12>
+		<ID>4</ID>
+		<Name></Name>
+		<Dialogue>새미누리는	배가고파 어지럽다</Dialogue>
+	</Dream12>
+	<Dream12>
+		<ID>5</ID>
+		<Name></Name>
+		<Dialogue>점점 기억이 흐릿해져간다</Dialogue>
+	</Dream12>
+	<Dream12>
+		<ID>6</ID>
+		<Name></Name>
+		<Dialogue>그때였다...</Dialogue>
+	</Dream12>
+	<Dream12>
+		<ID>7</ID>
+		<Name></Name>
+		<Dialogue>피를 팔아 돈을 벌 수 있다는 소식을 들었을 때,</Dialogue>
+	</Dream12>
+	<Dream12>
+		<ID>8</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 피를 뽑으러 혈액관리소로 갔다</Dialogue>
+	</Dream12>
+	<Dream12>
+		<ID>9</ID>
+		<Name></Name>
+		<Dialogue>그 뒤 바로 새미누리의 통장에 5000크레딧이 들어왔다</Dialogue>
+	</Dream12>
+	<Dream12>
+		<ID>10</ID>
+		<Name></Name>
+		<Dialogue>그게 이 이야기의 시작일 것이다</Dialogue>
+	</Dream12>
 </dataroot>

@@ -78,6 +78,16 @@ public class DialogueShow : MonoBehaviour
     {
         sentanceCount = 0;
         dialogueBarAnim.SetBool("isOpen", false);
+
+
+        //꿈을 꾸는지 확인해 봅시다
+        if (SystemManager.Instance.House.isHouse)
+        {
+            SystemManager.Instance.House.DreamCheack();
+            return;
+        }
+
+
         mainButton.StartCoroutine(mainButton.FadeIN());
         
     }
