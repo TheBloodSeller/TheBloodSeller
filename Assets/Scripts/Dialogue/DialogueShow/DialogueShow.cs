@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class DialogueShow : MonoBehaviour
 {
     Dialogue dialogue;
@@ -79,7 +79,6 @@ public class DialogueShow : MonoBehaviour
         sentanceCount = 0;
         dialogueBarAnim.SetBool("isOpen", false);
 
-
         //««∏¶ ªÃ∞Ì ¿·¿ª ¿⁄æﬂ ≤ﬁ¿ª ≤€¥Ÿ
         if (SystemManager.Instance.House.isHouse && SystemManager.Instance.Bloodshop.isdreaming)
         {
@@ -92,8 +91,18 @@ public class DialogueShow : MonoBehaviour
             SystemManager.Instance.Bloodshop.BloodCheck();
             return;
         }
+        else if (SystemManager.Instance.Spaceport.isHappyEnding)
+        {
+            SceneManager.LoadScene("StartScene");
+            return;
+        }
 
         mainButton.StartCoroutine(mainButton.FadeIN());
+        
+    }
+
+    void CheckQuater()
+    {
         
     }
 }

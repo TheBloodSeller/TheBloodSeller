@@ -127,4 +127,14 @@ public class SystemManager : MonoBehaviour
         }
     }
 
+    [SerializeField]
+    Ending ending;
+    public Ending Ending
+    {
+        get
+        {
+            return ending;
+        }
+    }
+
 }

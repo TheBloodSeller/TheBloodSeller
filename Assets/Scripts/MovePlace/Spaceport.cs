@@ -7,6 +7,8 @@ public class Spaceport : MovePlace
     [SerializeField]
     GameObject buyBtn;
 
+    public bool isHappyEnding = false;
+
     void Start()
     {
         buyBtn.SetActive(false);
@@ -35,10 +37,9 @@ public class Spaceport : MovePlace
         }
         else
         {
-            //유로파 배경
-            SystemManager.Instance.DialogueTrigger.ChangeBG(6);
-            //해피 엔딩
-            SystemManager.Instance.DialogueShow.StartDialogue("HappyEnding");
+            buyBtn.SetActive(false);
+            //해피엔딩
+            SystemManager.Instance.Ending.HappyEnding();
         }
     }
 
