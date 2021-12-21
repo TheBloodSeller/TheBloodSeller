@@ -80,13 +80,18 @@ public class DialogueShow : MonoBehaviour
         dialogueBarAnim.SetBool("isOpen", false);
 
 
-        //²ÞÀ» ²Ù´ÂÁö È®ÀÎÇØ º¾½Ã´Ù
-        if (SystemManager.Instance.House.isHouse)
+        //ÇÇ¸¦ »Ì°í ÀáÀ» ÀÚ¾ß ²ÞÀ» ²Û´Ù
+        if (SystemManager.Instance.House.isHouse && SystemManager.Instance.Bloodshop.isdreaming)
         {
-            SystemManager.Instance.House.DreamCheack();
+            SystemManager.Instance.House.DreamCheck();
+            SystemManager.Instance.Bloodshop.isdreaming = false;
             return;
         }
-
+        else if (SystemManager.Instance.Bloodshop.isBloodshop)
+        {
+            SystemManager.Instance.Bloodshop.BloodCheck();
+            return;
+        }
 
         mainButton.StartCoroutine(mainButton.FadeIN());
         

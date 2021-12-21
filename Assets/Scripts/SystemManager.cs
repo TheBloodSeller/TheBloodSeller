@@ -117,4 +117,14 @@ public class SystemManager : MonoBehaviour
         }
     }
 
+    [SerializeField]
+    Bloodshop bloodshop;
+    public Bloodshop Bloodshop
+    {
+        get
+        {
+            return bloodshop;
+        }
+    }
+
 }

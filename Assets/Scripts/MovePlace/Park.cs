@@ -31,6 +31,7 @@ public class Park : MovePlace
     public override void Move()
     {
         base.Move();
+        SystemManager.Instance.Bloodshop.isdreaming = false;
         CardBtn.SetActive(true);
         
     }

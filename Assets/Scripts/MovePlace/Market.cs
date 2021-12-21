@@ -14,6 +14,7 @@ public class Market : MovePlace
     public override void Move()
     {
         base.Move();
+        SystemManager.Instance.Bloodshop.isdreaming = false;
         productsBar.SetActive(true);
     }
     

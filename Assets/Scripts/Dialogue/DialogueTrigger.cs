@@ -22,7 +22,7 @@ public class DialogueTrigger : MonoBehaviour
     void Start()
     {
         SystemManager.Instance.DialogueShow.StartDialogue("Start");
-        background.material = backMat[5];
+        ChangeBG(5);
     }
 
     public void OnClickNextStage()
@@ -48,6 +48,7 @@ public class DialogueTrigger : MonoBehaviour
                 stageIndex = 1;
                 background.material = backMat[stageIndex];
                 buttonCollection.SetActive(false);
+                SystemManager.Instance.Bloodshop.Move();
                 break;
 
             case "Spaceport":
@@ -79,7 +80,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public void MainScene()
     {
-        background.material = backMat[5];
+        ChangeBG(5);
         buttonCollection.SetActive(true);
     }
 

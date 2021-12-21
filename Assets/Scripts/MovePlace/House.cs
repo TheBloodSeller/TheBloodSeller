@@ -12,12 +12,12 @@ public class House : MovePlace
         isHouse = true;
         base.Move();
         Sleep();
-        //DreamCheack();
     }
 
     public override void GoOut()
     {
         isHouse = false;
+        SystemManager.Instance.Bloodshop.isdreaming = false;
         base.GoOut();
     }
 
@@ -34,7 +34,7 @@ public class House : MovePlace
     }
 
     //²ÞÀ» ²Û´Ù
-    public void DreamCheack()
+    public void DreamCheck()
     {
         player.Dream++;
         SystemManager.Instance.DialogueTrigger.ChangeBG(5);
