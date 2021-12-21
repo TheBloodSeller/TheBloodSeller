@@ -941,4 +941,81 @@
 		<Name></Name>
 		<Dialogue>그게 이 이야기의 시작일 것이다</Dialogue>
 	</Dream12>
+	
+	<!--배드엔딩-->
+	<!--HP-->
+	<DeadEnding_HP>
+		<ID>1</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 점점 몸이 허약해진 나머지 눈을 감았다</Dialogue>
+	</DeadEnding_HP>
+	<DeadEnding_HP>
+		<ID>2</ID>
+		<Name></Name>
+		<Dialogue>아무도 그녀를 추모하지 않았고,</Dialogue>
+	</DeadEnding_HP>
+	<DeadEnding_HP>
+		<ID>3</ID>
+		<Name></Name>
+		<Dialogue>세레스가 7번 자전한 뒤에 핵융합으로 우주먼지가 되어 사라졌다</Dialogue>
+	</DeadEnding_HP>
+	<DeadEnding_HP>
+		<ID>4</ID>
+		<Name></Name>
+		<Dialogue>그녀가 컴퓨터에 적어둔 여러 망상들은 유언이 되어 유로파로 보내지게 되었다</Dialogue>
+	</DeadEnding_HP>
+	<DeadEnding_HP>
+		<ID>5</ID>
+		<Name></Name>
+		<Dialogue>아마 유로파에 살고 있는 누군가가 받아갈 것 같다</Dialogue>
+	</DeadEnding_HP>
+	<DeadEnding_HP>
+		<ID>6</ID>
+		<Name></Name>
+		<Dialogue>-끝-</Dialogue>
+	</DeadEnding_HP>
+	
+	<!--Blood-->
+	<DeadEnding_Blood>
+		<ID>1</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 머리가 점점 어지러워졌다</Dialogue>
+	</DeadEnding_Blood>	
+	<DeadEnding_Blood>
+		<ID>2</ID>
+		<Name></Name>
+		<Dialogue>돈 욕심에 무리하게 피를 뽑다가 일어난 일이다</Dialogue>
+	</DeadEnding_Blood>
+	<DeadEnding_Blood>
+		<ID>3</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 천천히 눈을 감았다</Dialogue>
+	</DeadEnding_Blood>
+	<DeadEnding_Blood>
+		<ID>4</ID>
+		<Name></Name>
+		<Dialogue>-끝-</Dialogue>
+	</DeadEnding_Blood>
+	
+	<!--Hunger-->
+	<DeadEnding_Hunger>
+		<ID>1</ID>
+		<Name>새미누리</Name>
+		<Dialogue>아... 배고파...</Dialogue>
+	</DeadEnding_Hunger>
+	<DeadEnding_Hunger>
+		<ID>2</ID>
+		<Name>새미누리</Name>
+		<Dialogue>해미는 잘 살고 있으려나...</Dialogue>
+	</DeadEnding_Hunger>
+	<DeadEnding_Hunger>
+		<ID>3</ID>
+		<Name>새미누리</Name>
+		<Dialogue>나... 잘 살아 온걸까..?</Dialogue>
+	</DeadEnding_Hunger>
+	<DeadEnding_Hunger>
+		<ID>4</ID>
+		<Name></Name>
+		<Dialogue>새미누리는 천천히 눈을 감았다</Dialogue>
+	</DeadEnding_Hunger>
 </dataroot>

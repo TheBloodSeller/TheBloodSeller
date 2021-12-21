@@ -14,8 +14,10 @@ public class DialogueShow : MonoBehaviour
     [SerializeField] Text sentanceText;
     [SerializeField] SpriteRenderer characterSprite;
     [SerializeField] MainBtn mainButton => SystemManager.Instance.MainBtn;
-    
 
+    Player player => SystemManager.Instance.Player;
+
+     public bool isEnding = false;
     
 
     int sentanceCount = 0;
@@ -79,7 +81,23 @@ public class DialogueShow : MonoBehaviour
         sentanceCount = 0;
         dialogueBarAnim.SetBool("isOpen", false);
 
-        //««∏¶ ªÃ∞Ì ¿·¿ª ¿⁄æﬂ ≤ﬁ¿ª ≤€¥Ÿ
+        if (isEnding)
+        {
+            SceneManager.LoadScene("StartScene");
+            return;
+        }
+
+        if (player.HP <= 0 || player.Blood <= 0 || player.Hunger <= 0)
+        {
+            CheckEnding();
+            return;
+        }
+
+        
+
+        #region Quater
+
+
         if (SystemManager.Instance.House.isHouse && SystemManager.Instance.Bloodshop.isdreaming)
         {
             SystemManager.Instance.House.DreamCheck();
@@ -91,18 +109,45 @@ public class DialogueShow : MonoBehaviour
             SystemManager.Instance.Bloodshop.BloodCheck();
             return;
         }
-        else if (SystemManager.Instance.Spaceport.isHappyEnding)
-        {
-            SceneManager.LoadScene("StartScene");
-            return;
-        }
+        #endregion
 
         mainButton.StartCoroutine(mainButton.FadeIN());
         
     }
 
-    void CheckQuater()
+    public void CheckEnding()
     {
-        
+
+        bool[] endingQuater = new bool[] { player.HP <= 0, player.Blood <= 0, player.Hunger <= 0 };
+        for (int i = 0; i < endingQuater.Length; i++)
+        {
+            if (endingQuater[i])
+            {
+                EndingQuater(i);
+                return;
+            }
+        }
     }
+
+    public void EndingQuater(int num)
+    {
+        isEnding = true;
+        string endingName = "DeadEnding";
+        switch (num)
+        {
+            case 0:
+                endingName += "_HP";
+                break;
+            case 1:
+                endingName += "_Blood";
+                break;
+            case 2:
+                endingName += "_Hunger";
+                break;
+            default:
+                break;
+        }
+        SystemManager.Instance.Ending.EndingDialogue(endingName);
+    }
+
 }

@@ -20,7 +20,7 @@ public class Bloodshop : MovePlace
 
     public void BloodCheck()
     {
-        if (player.Blood >= 3600 && player.HP >= 3)
+        if (player.Blood >= 500 && player.HP >= 3)
         {
             SystemManager.Instance.DialogueShow.StartDialogue("GoodBlood");
             player.Blood -= 500;

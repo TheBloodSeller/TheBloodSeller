@@ -7,8 +7,6 @@ public class Spaceport : MovePlace
     [SerializeField]
     GameObject buyBtn;
 
-    public bool isHappyEnding = false;
-
     void Start()
     {
         buyBtn.SetActive(false);
@@ -39,7 +37,8 @@ public class Spaceport : MovePlace
         {
             buyBtn.SetActive(false);
             //해피엔딩
-            SystemManager.Instance.Ending.HappyEnding();
+            SystemManager.Instance.Ending.EndingDialogue("HappyEnding");
+
         }
     }
 
