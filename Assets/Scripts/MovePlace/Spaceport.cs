@@ -7,6 +7,8 @@ public class Spaceport : MovePlace
     [SerializeField]
     GameObject buyBtn;
 
+    [SerializeField] AudioSource spaceportSound;
+
     void Start()
     {
         buyBtn.SetActive(false);
@@ -14,6 +16,7 @@ public class Spaceport : MovePlace
 
     public override void Move()
     {
+        spaceportSound.Play();
         base.Move();
         SystemManager.Instance.DialogueShow.StartDialogue("Spaceport");
         SystemManager.Instance.Bloodshop.isDreaming = false;
@@ -23,6 +26,7 @@ public class Spaceport : MovePlace
     public override void GoOut()
     {
         base.GoOut();
+        spaceportSound.Stop();
         buyBtn.SetActive(false);
     }
 

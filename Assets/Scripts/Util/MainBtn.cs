@@ -54,6 +54,8 @@ public class MainBtn : MonoBehaviour
         SystemManager.Instance.Market.GoOut();
         SystemManager.Instance.Park.GoOut();
         SystemManager.Instance.Spaceport.GoOut();
+        SystemManager.Instance.Bloodshop.GoOut();
+        SystemManager.Instance.House.GoOut();
         StartCoroutine("FadeOut");
         SystemManager.Instance.DialogueTrigger.MainScene();
 

@@ -15,6 +15,8 @@ public class DialogueShow : MonoBehaviour
     [SerializeField] SpriteRenderer characterSprite;
     [SerializeField] MainBtn mainButton => SystemManager.Instance.MainBtn;
 
+    [SerializeField] AudioSource textSound;
+
     Player player => SystemManager.Instance.Player;
 
      public bool isEnding = false;
@@ -54,10 +56,9 @@ public class DialogueShow : MonoBehaviour
     
     void ShowDialogue()
     {
-
+        textSound.Play();
         nameText.text = dialogue.names[sentanceCount];
         StartCoroutine(TypeSentance(dialogue.sentences[sentanceCount]));
-        //sentanceText.text = dialogue.sentences[sentanceCount];
         characterSprite.sprite = dialogue.img[sentanceCount];
 
     }
@@ -90,6 +91,7 @@ public class DialogueShow : MonoBehaviour
     {
         sentanceCount = 0;
         dialogueBarAnim.SetBool("isOpen", false);
+        textSound.Stop();
 
         if (isEnding)
         {
@@ -101,9 +103,7 @@ public class DialogueShow : MonoBehaviour
         {
             CheckEnding();
             return;
-        }
-
-        
+        }       
 
         #region Quater
 

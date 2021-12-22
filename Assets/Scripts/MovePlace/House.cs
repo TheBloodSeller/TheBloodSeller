@@ -8,19 +8,21 @@ public class House : MovePlace
     public bool isHouse;
 
     [SerializeField]
-    AudioSource dreamBGM;
+    AudioSource houseSound;
+    [SerializeField] AudioSource dreamSound;
 
     public override void Move()
     {
         isHouse = true;
+        houseSound.Play();
         base.Move();
         Sleep();
     }
 
     public override void GoOut()
     {
-        isHouse = false;
-        SystemManager.Instance.Bloodshop.isDreaming = false;
+        houseSound.Stop();
+        dreamSound.Stop();
         base.GoOut();
     }
 
@@ -39,9 +41,10 @@ public class House : MovePlace
     //²ÞÀ» ²Û´Ù
     public void DreamCheck()
     {
+        houseSound.Stop();
         player.Dream++;
         SystemManager.Instance.DialogueTrigger.ChangeBG(5);
-        dreamBGM.Play();
+        dreamSound.Play();
         if (player.Dream > 20)
         {
             SystemManager.Instance.DialogueShow.StartDialogue("DreamEnd");

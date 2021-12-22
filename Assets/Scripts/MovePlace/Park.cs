@@ -13,6 +13,9 @@ public class Park : MovePlace
     [SerializeField]
     TMP_Text[] numText;
 
+    [SerializeField] AudioSource parkSound;
+    [SerializeField] AudioSource cardSound;
+
     int[] nums;
 
     void Awake()
@@ -31,6 +34,7 @@ public class Park : MovePlace
     public override void Move()
     {
         base.Move();
+        parkSound.Play();
         SystemManager.Instance.Bloodshop.isDreaming = false;
         CardBtn.SetActive(true);
         
@@ -39,6 +43,7 @@ public class Park : MovePlace
     public override void GoOut()
     {
         base.GoOut();
+        parkSound.Stop();
         CardBtn.SetActive(false);
         CardBar.SetActive(false);
     }
@@ -56,6 +61,7 @@ public class Park : MovePlace
         CardBar.SetActive(true);
         for (int i = 0; i < numText.Length; i++)
         {
+            cardSound.Play();
             nums[i] = Random.Range(1, 10);
             numText[i].text = nums[i].ToString();
         }
@@ -69,7 +75,8 @@ public class Park : MovePlace
 
     void GameResults()
     {
-        string results = null;
+        SystemManager.Instance.DialogueShow.SentanceCount = 0;
+
         //if문을 이용해서 결과를 출력
         if (nums[0] == nums[1] && nums[0] == nums[2])
         {
@@ -79,7 +86,6 @@ public class Park : MovePlace
         else{
             SystemManager.Instance.DialogueShow.StartDialogue("Loseing");
         }
-
 
     }
 }

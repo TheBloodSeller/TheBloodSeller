@@ -7,7 +7,7 @@ public class Bloodshop : MovePlace
     public bool isBloodshop;
     public bool isDreaming;
 
-    [SerializeField] AudioSource bloodSource;
+    [SerializeField] AudioSource bloodSound;
     public override void Move()
     {
         base.Move();
@@ -17,11 +17,12 @@ public class Bloodshop : MovePlace
     public override void GoOut()
     {
         base.GoOut();
+        bloodSound.Stop();
     }
 
     public void BloodCheck()
     {
-        bloodSource.Play();
+        bloodSound.Play();
         if (player.Blood >= 500 && player.HP >= 3)
         {
             SystemManager.Instance.DialogueShow.StartDialogue("GoodBlood");
