@@ -16,7 +16,7 @@ public class Spaceport : MovePlace
     {
         base.Move();
         SystemManager.Instance.DialogueShow.StartDialogue("Spaceport");
-        SystemManager.Instance.Bloodshop.isdreaming = false;
+        SystemManager.Instance.Bloodshop.isDreaming = false;
         buyBtn.SetActive(true);
     }
 

@@ -5,29 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class Ending : MonoBehaviour
 {
-
-    public void HappyEnding()
-    {
-        SystemManager.Instance.DialogueShow.isEnding = true;
-        SystemManager.Instance.DialogueTrigger.ChangeBG(6);
-        SystemManager.Instance.DialogueShow.StartDialogue("HappyEnding");
-    }
-
-    public void DeadEnding_HP()
-    {
-       
-        
-    }
-
+    [SerializeField] AudioSource happyEndingSound;
+    [SerializeField] AudioSource badEndingSource;
+    [SerializeField] MainBtn mainbtn;
     public void EndingDialogue(string endingName)
     {
+        mainbtn.StartCoroutine(mainbtn.FadeOut());
         Debug.Log(endingName);
         SystemManager.Instance.DialogueShow.isEnding = true;
         if (endingName == "HappyEnding")
+        {
+            happyEndingSound.Play();
             SystemManager.Instance.DialogueTrigger.ChangeBG(6);
+
+        }
         else
+        {
+            badEndingSource.Play();
             SystemManager.Instance.DialogueTrigger.ChangeBG(5);
-        
+        }
+
         SystemManager.Instance.DialogueShow.StartDialogue(endingName);
     }
 }

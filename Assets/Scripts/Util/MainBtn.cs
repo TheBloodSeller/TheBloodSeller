@@ -8,10 +8,13 @@ public class MainBtn : MonoBehaviour
 {
     Image image;
     TMP_Text text;
+
+    [SerializeField] AudioSource clickSound;
     void Awake()
     {
         image = GetComponent<Image>();
         text = GetComponentInChildren<TMP_Text>();
+        clickSound = GetComponentInChildren<AudioSource>();
     }
 
     public void Disapper()
@@ -47,6 +50,7 @@ public class MainBtn : MonoBehaviour
 
     public void OnClick() {
 
+        clickSound.Play();
         SystemManager.Instance.Market.GoOut();
         SystemManager.Instance.Park.GoOut();
         SystemManager.Instance.Spaceport.GoOut();

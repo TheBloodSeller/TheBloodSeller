@@ -8,6 +8,9 @@ public class PlayerState : MonoBehaviour
     [SerializeField]
     GameObject stateImg;
 
+    [SerializeField]
+    AudioSource clickSource;
+
     [SerializeField] Text HPTxt;
     [SerializeField] Text BloodTxt;
     [SerializeField] Text HungerTxt;
@@ -27,10 +30,15 @@ public class PlayerState : MonoBehaviour
     {
         isShowing = !isShowing;
         Showing(isShowing);
-        HPText();
-        BloodText();
-        HungerText();
-        MoneyText();
+        if (isShowing)
+        {
+            clickSource.Play();
+            HPText();
+            BloodText();
+            HungerText();
+            MoneyText();
+        }
+
         
     }
 

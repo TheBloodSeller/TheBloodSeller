@@ -98,10 +98,10 @@ public class DialogueShow : MonoBehaviour
         #region Quater
 
 
-        if (SystemManager.Instance.House.isHouse && SystemManager.Instance.Bloodshop.isdreaming)
+        if (SystemManager.Instance.House.isHouse && SystemManager.Instance.Bloodshop.isDreaming)
         {
             SystemManager.Instance.House.DreamCheck();
-            SystemManager.Instance.Bloodshop.isdreaming = false;
+            SystemManager.Instance.Bloodshop.isDreaming = false;
             return;
         }
         else if (SystemManager.Instance.Bloodshop.isBloodshop)

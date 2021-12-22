@@ -17,7 +17,7 @@ public class House : MovePlace
     public override void GoOut()
     {
         isHouse = false;
-        SystemManager.Instance.Bloodshop.isdreaming = false;
+        SystemManager.Instance.Bloodshop.isDreaming = false;
         base.GoOut();
     }
 

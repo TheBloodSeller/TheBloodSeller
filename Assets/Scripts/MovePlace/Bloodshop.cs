@@ -5,8 +5,9 @@ using UnityEngine;
 public class Bloodshop : MovePlace
 {
     public bool isBloodshop;
-    public bool isdreaming;
+    public bool isDreaming;
 
+    [SerializeField] AudioSource bloodSource;
     public override void Move()
     {
         base.Move();
@@ -20,6 +21,7 @@ public class Bloodshop : MovePlace
 
     public void BloodCheck()
     {
+        bloodSource.Play();
         if (player.Blood >= 500 && player.HP >= 3)
         {
             SystemManager.Instance.DialogueShow.StartDialogue("GoodBlood");
@@ -32,7 +34,7 @@ public class Bloodshop : MovePlace
             SystemManager.Instance.DialogueShow.StartDialogue("BadBlood");
         }
         isBloodshop = false;
-        isdreaming = true;
+        isDreaming = true;
     }
 
 }
