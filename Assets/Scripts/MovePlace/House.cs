@@ -7,6 +7,9 @@ public class House : MovePlace
 
     public bool isHouse;
 
+    [SerializeField]
+    AudioSource dreamBGM;
+
     public override void Move()
     {
         isHouse = true;
@@ -38,6 +41,11 @@ public class House : MovePlace
     {
         player.Dream++;
         SystemManager.Instance.DialogueTrigger.ChangeBG(5);
+        dreamBGM.Play();
+        if (player.Dream > 20)
+        {
+            SystemManager.Instance.DialogueShow.StartDialogue("DreamEnd");
+        }
         SystemManager.Instance.DialogueShow.StartDialogue("Dream" + SystemManager.Instance.Player.Dream);
         isHouse = false;
     }

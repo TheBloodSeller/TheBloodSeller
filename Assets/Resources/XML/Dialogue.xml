@@ -941,6 +941,11 @@
 		<Name></Name>
 		<Dialogue>그게 이 이야기의 시작일 것이다</Dialogue>
 	</Dream12>
+	<DreamEnd>
+		<ID></ID>
+		<Name></Name>
+		<Dialogue>이제 새미누리는 더 이상 꿀 꿈이 없다</Dialogue>
+	</DreamEnd>
 	
 	<!--배드엔딩-->
 	<!--HP-->

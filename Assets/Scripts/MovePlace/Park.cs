@@ -39,6 +39,7 @@ public class Park : MovePlace
     public override void GoOut()
     {
         base.GoOut();
+        CardBtn.SetActive(false);
         CardBar.SetActive(false);
     }
 

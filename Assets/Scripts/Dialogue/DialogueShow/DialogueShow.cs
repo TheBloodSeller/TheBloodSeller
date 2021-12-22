@@ -56,10 +56,20 @@ public class DialogueShow : MonoBehaviour
     {
 
         nameText.text = dialogue.names[sentanceCount];
-        sentanceText.text = dialogue.sentences[sentanceCount];
+        StartCoroutine(TypeSentance(dialogue.sentences[sentanceCount]));
+        //sentanceText.text = dialogue.sentences[sentanceCount];
         characterSprite.sprite = dialogue.img[sentanceCount];
 
-        
+    }
+
+    IEnumerator TypeSentance(string sentance)
+    {
+        sentanceText.text = "";
+        foreach (char letter in sentance.ToCharArray())
+        {
+            sentanceText.text += letter.ToString();
+            yield return new WaitForSeconds(0.05f);
+        }
     }
  
     public void NextSentance()
@@ -72,7 +82,7 @@ public class DialogueShow : MonoBehaviour
             EndDialogue();
             return;
         }
-        
+        StopAllCoroutines();
         ShowDialogue();
     }
 
