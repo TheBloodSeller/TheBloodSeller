@@ -7,17 +7,20 @@ public class Bloodshop : MovePlace
     public bool isBloodshop;
     public bool isDreaming;
 
+    [SerializeField] AudioSource moveBloodSound;
     [SerializeField] AudioSource bloodSound;
     public override void Move()
     {
         base.Move();
-        isBloodshop = true;
+        moveBloodSound.Play();
+         isBloodshop = true;
         SystemManager.Instance.House.isHouse = false;
     }
     public override void GoOut()
     {
         base.GoOut();
         bloodSound.Stop();
+        moveBloodSound.Stop();
     }
 
     public void BloodCheck()
