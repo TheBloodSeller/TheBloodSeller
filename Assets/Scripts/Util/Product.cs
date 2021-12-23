@@ -16,6 +16,8 @@ public class Product : MonoBehaviour
     [SerializeField] float healAmount;
     [SerializeField] float feedAmount;
 
+    [SerializeField] AudioSource buySound;
+
     void Start()
     {
         priceText.text = price.ToString();
@@ -50,6 +52,7 @@ public class Product : MonoBehaviour
     void Purchase(int price)
     {
         Player.Money -= price;
+        buySound.Play();
         UseProduct();
     }
 
