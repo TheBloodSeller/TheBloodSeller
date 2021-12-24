@@ -14,6 +14,7 @@ public class Server : MonoBehaviour
 
     [SerializeField] GameObject logInImg;
     [SerializeField] GameObject successImg;
+    
 
     private string id;
     private string pw;
@@ -70,11 +71,15 @@ public class Server : MonoBehaviour
         endRequest();
     }
 
-    void OnClick()
+    public void OnClick()
     {
         logInImg.SetActive(false);
     }
 
+    public void ShowOnClick()
+    {
+        logInImg.SetActive(true);
+    }
 
     void endRequest()
     {
