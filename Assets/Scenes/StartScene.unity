@@ -219,7 +219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &63168340
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2352,7 +2352,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1346615243
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2907,6 +2907,7 @@ MonoBehaviour:
   pwInput: {fileID: 987486668}
   logInImg: {fileID: 1346615242}
   successImg: {fileID: 63168339}
+  successText: {fileID: 72873744}
 --- !u!4 &2137358679
 Transform:
   m_ObjectHideFlags: 0

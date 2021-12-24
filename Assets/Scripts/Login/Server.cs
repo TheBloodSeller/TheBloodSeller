@@ -14,6 +14,7 @@ public class Server : MonoBehaviour
 
     [SerializeField] GameObject logInImg;
     [SerializeField] GameObject successImg;
+    [SerializeField] Text successText;
     
 
     private string id;
@@ -59,13 +60,15 @@ public class Server : MonoBehaviour
 
             if (request.isNetworkError)
             {
+                successText.text = "실패 했습니다";
                 Debug.Log(request.error);
             }
             else
             {
-                successImg.SetActive(true);
+                successText.text = "성공했습니다";
                 Debug.Log("<post>" + request.downloadHandler.text + "</post>");
             }
+            successImg.SetActive(true);
         }
 
         endRequest();
@@ -73,7 +76,9 @@ public class Server : MonoBehaviour
 
     public void OnClick()
     {
+        successImg.SetActive(false);
         logInImg.SetActive(false);
+
     }
 
     public void ShowOnClick()
