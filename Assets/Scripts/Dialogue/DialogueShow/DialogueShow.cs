@@ -69,21 +69,25 @@ public class DialogueShow : MonoBehaviour
         foreach (char letter in sentance.ToCharArray())
         {
             sentanceText.text += letter.ToString();
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(0.08f);
         }
     }
  
     public void NextSentance()
     {
-        sentanceCount++;
+        StopAllCoroutines();
 
+        sentanceText.text = "";
+        nameText.text = "";
+
+        
+        sentanceCount++;
         if (sentanceCount == dialogue.names.Length)
         {
             //다이알로그를 끝낸다
             EndDialogue();
             return;
         }
-        StopAllCoroutines();
         ShowDialogue();
     }
 

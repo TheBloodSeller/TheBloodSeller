@@ -28,10 +28,11 @@ public class Bloodshop : MovePlace
         bloodSound.Play();
         if (player.Blood >= 500 && player.HP >= 3)
         {
-            SystemManager.Instance.DialogueShow.StartDialogue("GoodBlood");
             player.Blood -= 500;
             player.Money += 5000;
             player.HP -= 2;
+            SystemManager.Instance.DialogueShow.StartDialogue("GoodBlood");
+            
         }
         else
         {
