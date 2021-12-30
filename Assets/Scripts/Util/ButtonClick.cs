@@ -7,7 +7,6 @@ public class ButtonClick : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("GameScene");
-
+        LoadingSceneController.LoadScene("GameScene");
     }
 }
