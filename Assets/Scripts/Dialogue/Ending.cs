@@ -10,7 +10,7 @@ public class Ending : MonoBehaviour
     [SerializeField] MainBtn mainbtn;
     public void EndingDialogue(string endingName)
     {
-        mainbtn.StartCoroutine(mainbtn.FadeOut());
+        mainbtn.Disapper();
         Debug.Log(endingName);
         SystemManager.Instance.DialogueShow.isEnding = true;
         if (endingName == "HappyEnding")

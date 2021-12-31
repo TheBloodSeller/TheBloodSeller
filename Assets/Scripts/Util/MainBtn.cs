@@ -9,9 +9,12 @@ public class MainBtn : MonoBehaviour
     Image image;
     TMP_Text text;
 
+    Button mainBtn;
+
     [SerializeField] AudioSource clickSound;
     void Awake()
     {
+        mainBtn = GetComponent<Button>();
         image = GetComponent<Image>();
         text = GetComponentInChildren<TMP_Text>();
         clickSound = GetComponentInChildren<AudioSource>();
@@ -22,18 +25,6 @@ public class MainBtn : MonoBehaviour
         Color color = new Vector4(1, 1, 1, 0);
         image.color = color;
         text.color = color;
-    }
-
-    public IEnumerator FadeOut()
-    {
-        for (float i = 1.0f; i >= 0; i -= 0.1f)
-        {
-            Color color = new Vector4(1,1,1,i);
-            image.color = color;
-            text.color = color;
-            yield return new WaitForSeconds(0.1f);
-
-        }
     }
 
     public IEnumerator FadeIN()
@@ -56,7 +47,7 @@ public class MainBtn : MonoBehaviour
         SystemManager.Instance.Spaceport.GoOut();
         SystemManager.Instance.Bloodshop.GoOut();
         SystemManager.Instance.House.GoOut();
-        StartCoroutine("FadeOut");
+        Disapper();
         SystemManager.Instance.DialogueTrigger.MainScene();
 
     }

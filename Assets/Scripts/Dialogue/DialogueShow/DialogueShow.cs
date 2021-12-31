@@ -17,6 +17,8 @@ public class DialogueShow : MonoBehaviour
 
     [SerializeField] AudioSource textSound;
 
+    [SerializeField] GameObject nextBtn;
+
     Player player => SystemManager.Instance.Player;
 
     public bool isEnding = false;    
@@ -57,10 +59,10 @@ public class DialogueShow : MonoBehaviour
     void ShowDialogue()
     {
         textSound.Play();
+        nextBtn.SetActive(false);
         nameText.text = dialogue.names[sentanceCount];
         StartCoroutine(TypeSentance(dialogue.sentences[sentanceCount]));
         characterSprite.sprite = dialogue.img[sentanceCount];
-
     }
 
     IEnumerator TypeSentance(string sentance)
@@ -71,6 +73,7 @@ public class DialogueShow : MonoBehaviour
             sentanceText.text += letter.ToString();
             yield return new WaitForSeconds(0.05f);
         }
+        nextBtn.SetActive(true);
     }
  
     public void NextSentance()
@@ -81,7 +84,6 @@ public class DialogueShow : MonoBehaviour
         sentanceText.text = "";
         nameText.text = "";
 
-        
         sentanceCount++;
         if (sentanceCount == dialogue.names.Length)
         {

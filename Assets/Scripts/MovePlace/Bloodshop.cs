@@ -8,24 +8,21 @@ public class Bloodshop : MovePlace
     public bool isDreaming;
 
     [SerializeField] AudioSource moveBloodSound;
-    [SerializeField] AudioSource bloodSound;
     public override void Move()
     {
         base.Move();
         moveBloodSound.Play();
-         isBloodshop = true;
+        isBloodshop = true;
         SystemManager.Instance.House.isHouse = false;
     }
     public override void GoOut()
     {
         base.GoOut();
-        bloodSound.Stop();
         moveBloodSound.Stop();
     }
 
     public void BloodCheck()
     {
-        bloodSound.Play();
         if (player.Blood >= 500 && player.HP >= 3)
         {
             player.Blood -= 500;
