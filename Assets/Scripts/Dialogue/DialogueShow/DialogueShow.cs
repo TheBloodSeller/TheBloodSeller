@@ -19,8 +19,7 @@ public class DialogueShow : MonoBehaviour
 
     Player player => SystemManager.Instance.Player;
 
-     public bool isEnding = false;
-    
+    public bool isEnding = false;    
 
     int sentanceCount = 0;
     public int SentanceCount
@@ -42,6 +41,7 @@ public class DialogueShow : MonoBehaviour
 
     public void StartDialogue(string btnName)
     {
+
         //메인 버튼 없애기
         mainButton.Disapper();
 
@@ -69,12 +69,13 @@ public class DialogueShow : MonoBehaviour
         foreach (char letter in sentance.ToCharArray())
         {
             sentanceText.text += letter.ToString();
-            yield return new WaitForSeconds(0.08f);
+            yield return new WaitForSeconds(0.05f);
         }
     }
  
     public void NextSentance()
     {
+
         StopAllCoroutines();
 
         sentanceText.text = "";

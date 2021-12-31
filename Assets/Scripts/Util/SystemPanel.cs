@@ -30,7 +30,6 @@ public class SystemPanel : MonoBehaviour
         PlayerPrefs.SetInt("Blood",player.Blood);
         PlayerPrefs.SetInt("Hunger",player.Hunger);
         PlayerPrefs.SetInt("Money",player.Money);
-
     }
 
     public void LoadOnClick()
