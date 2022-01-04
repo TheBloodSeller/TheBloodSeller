@@ -62,11 +62,13 @@ public class DialogueShow : MonoBehaviour
         nextBtn.SetActive(false);
         nameText.text = dialogue.names[sentanceCount];
         StartCoroutine(TypeSentance(dialogue.sentences[sentanceCount]));
+        Debug.Log(dialogue.sentences[sentanceCount]);
         characterSprite.sprite = dialogue.img[sentanceCount];
     }
 
     IEnumerator TypeSentance(string sentance)
     {
+        Debug.Log("startcoroutine");
         sentanceText.text = "";
         foreach (char letter in sentance.ToCharArray())
         {
@@ -78,9 +80,7 @@ public class DialogueShow : MonoBehaviour
  
     public void NextSentance()
     {
-
-        StopAllCoroutines();
-
+        StopCoroutine("TypeSentance");
         sentanceText.text = "";
         nameText.text = "";
 
